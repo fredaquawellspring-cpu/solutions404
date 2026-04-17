@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solutions 404 — Home Improvement & Business Services | Houston, TX</title>
+<meta name="description" content="Solutions 404 — Trusted directory for roofing, A/C, water purification, marketing and software automation services in Greater Houston, TX.">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --navy:#0B1829;--navy2:#132235;--accent:#E85C2C;--accent2:#F5A623;
+  --teal:#1A9E8F;--light:#F4F1ED;--white:#FFFFFF;--text:#0B1829;
+  --muted:#5A6070;--border:#DDD8D0;--radius:12px;
+}
+body{font-family:'DM Sans',sans-serif;background:var(--white);color:var(--text);overflow-x:hidden}
+
+/* LANGUAGE VISIBILITY */
+.t-en,.t-es{display:none!important}
+body.lang-en .t-en{display:inline!important}
+body.lang-es .t-es{display:inline!important}
+body.lang-en .t-en.block{display:block!important}
+body.lang-es .t-es.block{display:block!important}
+body.lang-en .t-en.flex{display:flex!important}
+body.lang-es .t-es.flex{display:flex!important}
+
+/* NAV */
+nav{background:var(--navy);padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:72px;position:sticky;top:0;z-index:100}
+.logo-wrap{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo-svg{width:44px;height:44px}
+.logo-name{font-family:'Syne',sans-serif;font-weight:800;font-size:20px;color:var(--white);letter-spacing:-0.3px}
+.logo-name span{color:var(--accent)}
+.nav-right{display:flex;align-items:center;gap:8px}
+.lang-btn{background:transparent;border:1.5px solid rgba(255,255,255,0.25);color:rgba(255,255,255,0.7);font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;padding:6px 14px;border-radius:20px;cursor:pointer;transition:all .2s}
+.lang-btn.active,.lang-btn:hover{background:var(--accent);border-color:var(--accent);color:var(--white)}
+.cta-nav{background:var(--accent);color:var(--white);border:none;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:500;padding:9px 22px;border-radius:20px;cursor:pointer;transition:background .2s;margin-left:8px}
+.cta-nav:hover{background:#d0501f}
+
+/* HERO */
+.hero{background:var(--navy);padding:80px 5% 100px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-80px;right:-80px;width:500px;height:500px;background:radial-gradient(circle,rgba(232,92,44,0.15) 0%,transparent 65%);pointer-events:none}
+.hero::after{content:'';position:absolute;bottom:-60px;left:20%;width:400px;height:400px;background:radial-gradient(circle,rgba(26,158,143,0.1) 0%,transparent 65%);pointer-events:none}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(232,92,44,0.15);border:1px solid rgba(232,92,44,0.3);color:var(--accent2);font-size:12px;font-weight:500;padding:6px 16px;border-radius:20px;margin-bottom:28px;letter-spacing:0.5px;text-transform:uppercase}
+.hero-badge::before{content:'';width:6px;height:6px;background:var(--accent);border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.3)}}
+h1{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(2.2rem,4.5vw,3.6rem);color:var(--white);line-height:1.1;max-width:680px;margin-bottom:20px;letter-spacing:-1px}
+h1 .highlight{color:var(--accent)}
+.hero-sub{color:rgba(255,255,255,0.65);font-size:18px;max-width:520px;line-height:1.6;margin-bottom:40px;font-weight:300}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn-primary{background:var(--accent);color:var(--white);border:none;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:500;padding:14px 32px;border-radius:30px;cursor:pointer;transition:all .2s}
+.btn-primary:hover{background:#d0501f;transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:rgba(255,255,255,0.8);border:1.5px solid rgba(255,255,255,0.25);font-family:'DM Sans',sans-serif;font-size:15px;font-weight:400;padding:14px 32px;border-radius:30px;cursor:pointer;transition:all .2s}
+.btn-ghost:hover{border-color:rgba(255,255,255,0.6);color:var(--white)}
+.hero-stats{display:flex;gap:40px;margin-top:64px;padding-top:48px;border-top:1px solid rgba(255,255,255,0.08);flex-wrap:wrap}
+.stat{display:flex;flex-direction:column;gap:4px}
+.stat-num{font-family:'Syne',sans-serif;font-weight:700;font-size:28px;color:var(--white)}
+.stat-num span{color:var(--accent)}
+.stat-label{font-size:13px;color:rgba(255,255,255,0.45);letter-spacing:0.3px}
+
+/* STRIP */
+.strip{background:var(--accent);padding:14px 5%;overflow:hidden;white-space:nowrap}
+.strip-inner{display:inline-flex;gap:48px;animation:scroll-x 20s linear infinite}
+@keyframes scroll-x{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.strip-item{color:var(--white);font-size:13px;font-weight:500;letter-spacing:0.8px;text-transform:uppercase;display:inline-flex;align-items:center;gap:10px}
+.strip-dot{width:4px;height:4px;background:rgba(255,255,255,0.5);border-radius:50%;display:inline-block}
+
+/* SECTIONS */
+.section{padding:80px 5%}
+.section-light{background:var(--light)}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+h2{font-family:'Syne',sans-serif;font-weight:700;font-size:clamp(1.8rem,3vw,2.6rem);line-height:1.15;letter-spacing:-0.5px;margin-bottom:16px}
+.section-sub{color:var(--muted);font-size:17px;line-height:1.65;max-width:560px;margin-bottom:48px}
+
+/* SERVICES GRID */
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.service-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:28px;transition:all .25s;cursor:pointer;position:relative;overflow:hidden}
+.service-card::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:var(--accent);opacity:0;transition:opacity .25s}
+.service-card:hover{border-color:rgba(232,92,44,0.3);transform:translateY(-4px);box-shadow:0 12px 32px rgba(11,24,41,0.08)}
+.service-card:hover::before{opacity:1}
+.service-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;font-size:22px}
+.icon-orange{background:rgba(232,92,44,0.1)}
+.icon-teal{background:rgba(26,158,143,0.1)}
+.icon-blue{background:rgba(37,99,235,0.1)}
+.icon-amber{background:rgba(245,166,35,0.1)}
+.service-title{font-family:'Syne',sans-serif;font-size:16px;font-weight:700;margin-bottom:8px;color:var(--text)}
+.service-desc{font-size:14px;color:var(--muted);line-height:1.55}
+.service-tag{display:inline-block;font-size:11px;font-weight:500;padding:3px 10px;border-radius:10px;margin-top:14px}
+.tag-core{background:rgba(232,92,44,0.1);color:var(--accent)}
+.tag-expand{background:rgba(26,158,143,0.1);color:var(--teal)}
+.tag-plus{background:rgba(245,166,35,0.1);color:#9a6f00}
+
+/* HOW IT WORKS */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0;position:relative}
+.steps::before{content:'';position:absolute;top:32px;left:10%;right:10%;height:1px;background:repeating-linear-gradient(to right,var(--border) 0,var(--border) 8px,transparent 8px,transparent 16px);z-index:0}
+.step{position:relative;z-index:1;text-align:center;padding:0 20px}
+.step-num{width:64px;height:64px;border-radius:50%;background:var(--navy);color:var(--white);font-family:'Syne',sans-serif;font-size:20px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;border:3px solid var(--light)}
+.step:nth-child(2) .step-num{background:var(--accent)}
+.step:nth-child(3) .step-num{background:var(--teal)}
+.step-title{font-family:'Syne',sans-serif;font-size:15px;font-weight:700;margin-bottom:8px}
+.step-desc{font-size:13px;color:var(--muted);line-height:1.55}
+
+/* CONTACT */
+.contact-wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:60px;align-items:start}
+.contact-info h2{color:var(--white)}
+.contact-info .section-sub{color:rgba(255,255,255,0.55);max-width:400px}
+.contact-detail{display:flex;align-items:center;gap:12px;margin-top:16px;color:rgba(255,255,255,0.7);font-size:14px}
+.contact-icon{width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+.form-card{background:var(--white);border-radius:16px;padding:36px}
+.form-group{margin-bottom:18px}
+label{display:block;font-size:13px;font-weight:500;color:var(--muted);margin-bottom:7px}
+input,select,textarea{width:100%;background:var(--light);border:1px solid var(--border);border-radius:8px;padding:11px 14px;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--text);outline:none;transition:border .2s}
+input:focus,select:focus,textarea:focus{border-color:var(--accent)}
+textarea{resize:vertical;min-height:90px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.btn-submit{width:100%;background:var(--accent);color:var(--white);border:none;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:500;padding:14px;border-radius:30px;cursor:pointer;margin-top:8px;transition:background .2s}
+.btn-submit:hover{background:#d0501f}
+
+/* FOOTER */
+footer{background:var(--navy);padding:48px 5% 32px;border-top:1px solid rgba(255,255,255,0.06)}
+.footer-top{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:40px;margin-bottom:40px}
+.footer-desc{color:rgba(255,255,255,0.45);font-size:13px;line-height:1.6;max-width:280px;margin-top:12px}
+.footer-col h4{font-family:'Syne',sans-serif;font-size:13px;font-weight:600;color:rgba(255,255,255,0.5);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:16px}
+.footer-col a{display:block;color:rgba(255,255,255,0.65);font-size:13px;margin-bottom:10px;text-decoration:none;transition:color .2s}
+.footer-col a:hover{color:var(--accent)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.06);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.footer-bottom p{color:rgba(255,255,255,0.3);font-size:12px}
+.footer-badge{color:rgba(255,255,255,0.3);font-size:12px}
+.footer-badge span{color:var(--accent)}
+
+@media(max-width:700px){
+  .contact-wrap{grid-template-columns:1fr}
+  .steps::before{display:none}
+  .form-row{grid-template-columns:1fr}
+  h1{font-size:2rem}
+}
+</style>
+</head>
+<body class="lang-en">
+
+<!-- NAV -->
+<nav>
+  <div class="logo-wrap">
+    <svg class="logo-svg" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="22" cy="22" r="21" fill="none" stroke="#E85C2C" stroke-width="1.5" opacity="0.4"/>
+      <circle cx="22" cy="22" r="15" fill="#132235"/>
+      <path d="M22 11L31 18.5V33H13V18.5Z" fill="none" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M14 20L22 13L30 20" fill="none" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+      <rect x="18" y="24" width="8" height="9" rx="1.5" fill="#E85C2C"/>
+      <circle cx="7" cy="22" r="2" fill="#E85C2C"/>
+      <circle cx="37" cy="22" r="2" fill="#E85C2C"/>
+      <circle cx="22" cy="7" r="1.5" fill="#F5A623" opacity="0.7"/>
+      <circle cx="22" cy="37" r="1.5" fill="#F5A623" opacity="0.7"/>
+    </svg>
+    <div class="logo-name">Solutions<span>404</span></div>
+  </div>
+  <div class="nav-right">
+    <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
+    <button class="lang-btn" id="btn-es" onclick="setLang('es')">ES</button>
+    <button class="cta-nav" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+      <span class="t-en">Get a Quote</span>
+      <span class="t-es">Cotización</span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">
+    <span class="t-en">✦ Trusted Home &amp; Business Solutions</span>
+    <span class="t-es">✦ Soluciones Confiables para el Hogar y Negocio</span>
+  </div>
+  <h1>
+    <span class="t-en block">Your Home. <span class="highlight">Fixed.</span><br>Your Business. <span class="highlight">Upgraded.</span></span>
+    <span class="t-es block">Tu Hogar. <span class="highlight">Resuelto.</span><br>Tu Negocio. <span class="highlight">Mejorado.</span></span>
+  </h1>
+  <p class="hero-sub t-en block">Connecting Houston homeowners and businesses with trusted, vetted professionals in roofing, A/C, water purification and more — all in one place.</p>
+  <p class="hero-sub t-es block">Conectamos a propietarios y negocios en Houston con profesionales verificados en techado, A/C, purificación de agua y mucho más — todo en un solo lugar.</p>
+  <div class="hero-btns">
+    <button class="btn-primary" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">
+      <span class="t-en">Explore Services</span>
+      <span class="t-es">Ver Servicios</span>
+    </button>
+    <button class="btn-ghost" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+      <span class="t-en">Get a Free Quote</span>
+      <span class="t-es">Cotización Gratis</span>
+    </button>
+  </div>
+  <div class="hero-stats">
+    <div class="stat">
+      <div class="stat-num">200<span>+</span></div>
+      <div class="stat-label"><span class="t-en">Trusted Pros</span><span class="t-es">Profesionales</span></div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">5<span>★</span></div>
+      <div class="stat-label"><span class="t-en">Average Rating</span><span class="t-es">Calificación</span></div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">24<span>h</span></div>
+      <div class="stat-label"><span class="t-en">Response Time</span><span class="t-es">Respuesta</span></div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">TX<span>✓</span></div>
+      <div class="stat-label"><span class="t-en">Licensed &amp; Insured</span><span class="t-es">Licenciados</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SCROLLING STRIP -->
+<div class="strip">
+  <div class="strip-inner" id="strip-content"></div>
+</div>
+
+<!-- SERVICES -->
+<section class="section section-light" id="services">
+  <p class="eyebrow"><span class="t-en">Our Services</span><span class="t-es">Nuestros Servicios</span></p>
+  <h2><span class="t-en">Solutions for Every Need</span><span class="t-es">Soluciones para Cada Necesidad</span></h2>
+  <p class="section-sub t-en block">From urgent repairs to long-term improvements — we connect you with the right professional for every job.</p>
+  <p class="section-sub t-es block">Desde reparaciones urgentes hasta mejoras a largo plazo — te conectamos con el profesional adecuado para cada trabajo.</p>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-icon icon-orange">🏠</div>
+      <div class="service-title"><span class="t-en">Roofing</span><span class="t-es">Techado</span></div>
+      <div class="service-desc t-en block">Repairs, replacements, inspections &amp; storm damage — residential and commercial. Only licensed, insured roofers.</div>
+      <div class="service-desc t-es block">Reparaciones, reemplazos, inspecciones y daños por tormenta — residencial y comercial. Solo contratistas licenciados.</div>
+      <span class="service-tag tag-core"><span class="t-en">Core Service</span><span class="t-es">Servicio Principal</span></span>
+    </div>
+    <div class="service-card">
+      <div class="service-icon icon-teal">❄️</div>
+      <div class="service-title"><span class="t-en">A/C &amp; HVAC</span><span class="t-es">Aire Acondicionado</span></div>
+      <div class="service-desc t-en block">Installation, tune-ups, emergency repairs and system replacements. Stay cool every Houston summer.</div>
+      <div class="service-desc t-es block">Instalación, mantenimiento, reparaciones de emergencia y reemplazos. Mantente fresco en el verano de Houston.</div>
+      <span class="service-tag tag-core"><span class="t-en">Core Service</span><span class="t-es">Servicio Principal</span></span>
+    </div>
+    <div class="service-card">
+      <div class="service-icon icon-blue">💧</div>
+      <div class="service-title"><span class="t-en">Water Filtration &amp; Purification</span><span class="t-es">Filtración y Purificación de Agua</span></div>
+      <div class="service-desc t-en block">Whole-home systems, under-sink filters, water softeners &amp; RO systems. Clean water for your family.</div>
+      <div class="service-desc t-es block">Sistemas para todo el hogar, filtros bajo lavabo, suavizadores y sistemas RO. Agua limpia para tu familia.</div>
+      <span class="service-tag tag-core"><span class="t-en">Core Service</span><span class="t-es">Servicio Principal</span></span>
+    </div>
+    <div class="service-card">
+      <div class="service-icon icon-amber">📈</div>
+      <div class="service-title"><span class="t-en">Marketing Solutions</span><span class="t-es">Soluciones de Marketing</span></div>
+      <div class="service-desc t-en block">Local SEO, paid ads, social media management and brand building for home service businesses ready to grow.</div>
+      <div class="service-desc t-es block">SEO local, anuncios pagados, gestión de redes sociales y construcción de marca para negocios listos para crecer.</div>
+      <span class="service-tag tag-expand"><span class="t-en">Growing Service</span><span class="t-es">Servicio en Crecimiento</span></span>
+    </div>
+    <div class="service-card">
+      <div class="service-icon icon-teal">⚙️</div>
+      <div class="service-title"><span class="t-en">Software &amp; Automation</span><span class="t-es">Software y Automatización</span></div>
+      <div class="service-desc t-en block">Custom workflows, CRM integrations, scheduling tools and web development for service businesses.</div>
+      <div class="service-desc t-es block">Flujos de trabajo personalizados, integraciones CRM, herramientas de agenda y desarrollo web.</div>
+      <span class="service-tag tag-plus"><span class="t-en">Add-on</span><span class="t-es">Adicional</span></span>
+    </div>
+    <div class="service-card" style="background:var(--navy);border-color:transparent">
+      <div class="service-icon" style="background:rgba(232,92,44,0.2)">➕</div>
+      <div class="service-title" style="color:var(--white)"><span class="t-en">More Coming Soon</span><span class="t-es">Más Próximamente</span></div>
+      <div class="service-desc t-en block" style="color:rgba(255,255,255,0.5)">Plumbing, electrical, landscaping and more. Are you a contractor? Join our network.</div>
+      <div class="service-desc t-es block" style="color:rgba(255,255,255,0.5)">Plomería, electricidad, paisajismo y más. ¿Eres contratista? Únete a nuestra red.</div>
+      <span class="service-tag" style="background:rgba(232,92,44,0.2);color:var(--accent)"><span class="t-en">Join Our Network →</span><span class="t-es">Únete a la Red →</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section" style="background:var(--white)">
+  <p class="eyebrow"><span class="t-en">How It Works</span><span class="t-es">Cómo Funciona</span></p>
+  <h2><span class="t-en">Simple. Fast. Trusted.</span><span class="t-es">Simple. Rápido. Confiable.</span></h2>
+  <p class="section-sub t-en block">Getting matched with the right pro takes less than 2 minutes.</p>
+  <p class="section-sub t-es block">Conectarte con el profesional correcto toma menos de 2 minutos.</p>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-title"><span class="t-en">Tell Us Your Need</span><span class="t-es">Cuéntanos Tu Necesidad</span></div>
+      <div class="step-desc t-en block">Select a service and describe your project briefly. No commitment required.</div>
+      <div class="step-desc t-es block">Selecciona un servicio y describe tu proyecto. Sin compromiso.</div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-title"><span class="t-en">We Match You</span><span class="t-es">Te Conectamos</span></div>
+      <div class="step-desc t-en block">Our directory connects you with vetted, licensed pros in your area within hours.</div>
+      <div class="step-desc t-es block">Te conectamos con profesionales verificados en tu área en pocas horas.</div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-title"><span class="t-en">Get It Done</span><span class="t-es">Haz Que Suceda</span></div>
+      <div class="step-desc t-en block">Review quotes, choose your pro, get the job done and leave a review.</div>
+      <div class="step-desc t-es block">Revisa cotizaciones, elige tu profesional y deja una reseña para ayudar a otros.</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact" style="background:var(--navy)">
+  <div class="contact-wrap">
+    <div class="contact-info">
+      <p class="eyebrow" style="color:var(--accent2)"><span class="t-en">Contact Us</span><span class="t-es">Contáctanos</span></p>
+      <h2><span class="t-en">Let's Get Your Project Started</span><span class="t-es">Empecemos Tu Proyecto Hoy</span></h2>
+      <p class="section-sub t-en block" style="color:rgba(255,255,255,0.55)">Whether you need a repair, an upgrade, or want to join our directory as a contractor — reach out below.</p>
+      <p class="section-sub t-es block" style="color:rgba(255,255,255,0.55)">Ya sea que necesites una reparación, una mejora, o quieras unirte como contratista — escríbenos abajo.</p>
+      <div class="contact-detail"><div class="contact-icon">📍</div><span>Greater Houston, TX &amp; Surrounding Areas</span></div>
+      <div class="contact-detail"><div class="contact-icon">🌐</div><span>solutions404.com</span></div>
+      <div class="contact-detail"><div class="contact-icon">⏱</div><span class="t-en">Response within 24 hours</span><span class="t-es">Respuesta en 24 horas</span></div>
+    </div>
+    <div>
+      <div class="form-card">
+        <div class="form-row">
+          <div class="form-group">
+            <label><span class="t-en">First Name</span><span class="t-es">Nombre</span></label>
+            <input type="text" id="ph-first">
+          </div>
+          <div class="form-group">
+            <label><span class="t-en">Last Name</span><span class="t-es">Apellido</span></label>
+            <input type="text" id="ph-last">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="you@email.com">
+        </div>
+        <div class="form-group">
+          <label><span class="t-en">Service Needed</span><span class="t-es">Servicio Requerido</span></label>
+          <select id="service-select"></select>
+        </div>
+        <div class="form-group">
+          <label><span class="t-en">Tell us about your project</span><span class="t-es">Cuéntanos sobre tu proyecto</span></label>
+          <textarea id="ph-msg"></textarea>
+        </div>
+        <button class="btn-submit"><span class="t-en">Send Request →</span><span class="t-es">Enviar Solicitud →</span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="logo-wrap">
+        <svg width="36" height="36" viewBox="0 0 44 44" fill="none">
+          <circle cx="22" cy="22" r="21" fill="none" stroke="#E85C2C" stroke-width="1.5" opacity="0.4"/>
+          <circle cx="22" cy="22" r="15" fill="#132235"/>
+          <path d="M22 11L31 18.5V33H13V18.5Z" fill="none" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+          <path d="M14 20L22 13L30 20" fill="none" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+          <rect x="18" y="24" width="8" height="9" rx="1.5" fill="#E85C2C"/>
+          <circle cx="7" cy="22" r="2" fill="#E85C2C"/>
+          <circle cx="37" cy="22" r="2" fill="#E85C2C"/>
+        </svg>
+        <div class="logo-name">Solutions<span>404</span></div>
+      </div>
+      <p class="footer-desc t-en block">Your trusted directory for home improvement and business services in Greater Houston.</p>
+      <p class="footer-desc t-es block">Tu directorio de confianza para mejoras del hogar y servicios empresariales en Houston.</p>
+    </div>
+    <div class="footer-col">
+      <h4><span class="t-en">Services</span><span class="t-es">Servicios</span></h4>
+      <a href="#">Roofing / Techado</a>
+      <a href="#">A/C &amp; HVAC</a>
+      <a href="#">Water Purification</a>
+      <a href="#">Marketing</a>
+      <a href="#">Software</a>
+    </div>
+    <div class="footer-col">
+      <h4><span class="t-en">Company</span><span class="t-es">Empresa</span></h4>
+      <a href="#"><span class="t-en">About Us</span><span class="t-es">Nosotros</span></a>
+      <a href="#"><span class="t-en">Join as a Pro</span><span class="t-es">Únete como Pro</span></a>
+      <a href="#">Contact</a>
+      <a href="#"><span class="t-en">Privacy Policy</span><span class="t-es">Privacidad</span></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Solutions404.com · Greater Houston, TX</p>
+    <div class="footer-badge">
+      <span class="t-en">Built for <span>Houston</span> families &amp; businesses</span>
+      <span class="t-es">Hecho para familias y negocios de <span>Houston</span></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const translations = {
+  en: {
+    strip: ['Roofing','A/C & HVAC','Water Purification','Software Automation','Marketing Solutions','Home Improvement'],
+    services: ['Select a service…','Roofing','A/C & HVAC','Water Filtration','Marketing Solutions','Software & Automation','Join as a Contractor','Other'],
+    namePH:'John',lastPH:'Smith',msgPH:'Describe your project briefly…'
+  },
+  es: {
+    strip: ['Techado','Aire Acondicionado','Purificación de Agua','Automatización','Mercadotecnia','Mejoras del Hogar'],
+    services: ['Selecciona un servicio…','Techado','Aire Acondicionado / A/C','Filtración de Agua','Soluciones de Marketing','Software y Automatización','Unirme como Contratista','Otro'],
+    namePH:'Juan',lastPH:'García',msgPH:'Describe brevemente tu proyecto…'
+  }
+};
+
+function buildStrip(lang){
+  const items=[...translations[lang].strip,...translations[lang].strip];
+  document.getElementById('strip-content').innerHTML=items.map(t=>
+    `<span class="strip-item">${t}<span class="strip-dot"></span></span>`
+  ).join('');
+}
+
+function buildSelect(lang){
+  const sel=document.getElementById('service-select');
+  sel.innerHTML=translations[lang].services.map((s,i)=>
+    `<option value="${i}">${s}</option>`
+  ).join('');
+}
+
+function updatePlaceholders(lang){
+  const t=translations[lang];
+  document.getElementById('ph-first').placeholder=t.namePH;
+  document.getElementById('ph-last').placeholder=t.lastPH;
+  document.getElementById('ph-msg').placeholder=t.msgPH;
+}
+
+function setLang(lang){
+  document.body.className='lang-'+lang;
+  document.getElementById('btn-en').classList.toggle('active',lang==='en');
+  document.getElementById('btn-es').classList.toggle('active',lang==='es');
+  buildStrip(lang);
+  buildSelect(lang);
+  updatePlaceholders(lang);
+}
+
+setLang('en');
+</script>
+</body>
+</html>
