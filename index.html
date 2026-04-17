@@ -3,424 +3,810 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Solutions 404 — Home Improvement & Business Services | Houston, TX</title>
-<meta name="description" content="Solutions 404 — Trusted directory for roofing, A/C, water purification, marketing and software automation services in Greater Houston, TX.">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+<title>Solutions 404 | Trusted Home & Business Contractors in Houston, TX</title>
+<meta name="description" content="Find vetted, licensed professionals for roofing, A/C, water purification, marketing, and software automation in Greater Houston, TX. Get a free quote today.">
+<meta name="keywords" content="Houston contractors, roofing Houston, AC repair Houston, water purification TX, trusted local businesses, home improvement directory">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://solutions404.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://solutions404.com/">
+<meta property="og:title" content="Solutions 404 | Trusted Contractors in Houston, TX">
+<meta property="og:description" content="Connect with top-rated, vetted professionals for your home and business needs in Greater Houston.">
+<meta property="og:image" content="https://solutions404.com/assets/social-share-image.jpg"> <meta property="og:site_name" content="Solutions 404">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Solutions 404 | Trusted Contractors in Houston, TX">
+<meta name="twitter:description" content="Connect with top-rated, vetted professionals for your home and business needs in Greater Houston.">
+<meta name="twitter:image" content="https://solutions404.com/assets/social-share-image.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Solutions 404",
+  "image": "https://solutions404.com/assets/logo.png",
+  "@id": "https://solutions404.com/",
+  "url": "https://solutions404.com/",
+  "telephone": "+17130000000",
+  "email": "helpdesk@solutions404.com",
+  "description": "Trusted directory for roofing, A/C, water purification, marketing and software automation services in Greater Houston, TX.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Greater Houston Area",
+    "addressLocality": "Houston",
+    "addressRegion": "TX",
+    "postalCode": "77002",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 29.7604,
+    "longitude": -95.3698
+  },
+  "areaServed": "Houston",
+  "sameAs": [
+    "https://www.facebook.com/solutions404",
+    "https://www.instagram.com/solutions404"
+  ]
+}
+</script>
+
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
-  --navy:#0B1829;--navy2:#132235;--accent:#E85C2C;--accent2:#F5A623;
-  --teal:#1A9E8F;--light:#F4F1ED;--white:#FFFFFF;--text:#0B1829;
-  --muted:#5A6070;--border:#DDD8D0;--radius:12px;
+  --navy:#0a1628;
+  --navy2:#0f1f3d;
+  --accent:#e8561f;
+  --accent2:#f5a623;
+  --teal:#00b894;
+  --light:#f8f6f2;
+  --white:#ffffff;
+  --text:#1a1a2e;
+  --muted:#6b7280;
+  --border:#e5e0d8;
+  --card:#ffffff;
+  --r:14px;
 }
-body{font-family:'DM Sans',sans-serif;background:var(--white);color:var(--text);overflow-x:hidden}
 
-/* LANGUAGE VISIBILITY */
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--white);color:var(--text);overflow-x:hidden}
+
+/* LANG */
 .t-en,.t-es{display:none!important}
 body.lang-en .t-en{display:inline!important}
 body.lang-es .t-es{display:inline!important}
-body.lang-en .t-en.block{display:block!important}
-body.lang-es .t-es.block{display:block!important}
-body.lang-en .t-en.flex{display:flex!important}
-body.lang-es .t-es.flex{display:flex!important}
+body.lang-en .t-en.b{display:block!important}
+body.lang-es .t-es.b{display:block!important}
+body.lang-en .t-en.f{display:flex!important}
+body.lang-es .t-es.f{display:flex!important}
 
-/* NAV */
-nav{background:var(--navy);padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:72px;position:sticky;top:0;z-index:100}
-.logo-wrap{display:flex;align-items:center;gap:12px;text-decoration:none}
-.logo-svg{width:44px;height:44px}
-.logo-name{font-family:'Syne',sans-serif;font-weight:800;font-size:20px;color:var(--white);letter-spacing:-0.3px}
-.logo-name span{color:var(--accent)}
-.nav-right{display:flex;align-items:center;gap:8px}
-.lang-btn{background:transparent;border:1.5px solid rgba(255,255,255,0.25);color:rgba(255,255,255,0.7);font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;padding:6px 14px;border-radius:20px;cursor:pointer;transition:all .2s}
-.lang-btn.active,.lang-btn:hover{background:var(--accent);border-color:var(--accent);color:var(--white)}
-.cta-nav{background:var(--accent);color:var(--white);border:none;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:500;padding:9px 22px;border-radius:20px;cursor:pointer;transition:background .2s;margin-left:8px}
-.cta-nav:hover{background:#d0501f}
+/* ── NAV ── */
+nav{
+  background:rgba(10,22,40,0.96);
+  backdrop-filter:blur(20px);
+  padding:0 6%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  height:70px;
+  position:fixed;
+  top:0;width:100%;
+  z-index:1000;
+  border-bottom:1px solid rgba(255,255,255,0.06);
+}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-mark{width:40px;height:40px}
+.logo-text{font-family:'Syne',sans-serif;font-weight:800;font-size:19px;color:#fff;letter-spacing:-0.5px}
+.logo-text em{color:var(--accent);font-style:normal}
+.nav-links{display:flex;align-items:center;gap:6px}
+.lang-pill{display:flex;background:rgba(255,255,255,0.07);border-radius:20px;padding:3px}
+.lbtn{background:transparent;border:none;color:rgba(255,255,255,0.55);font-family:'Inter',sans-serif;font-size:12px;font-weight:600;padding:5px 13px;border-radius:16px;cursor:pointer;transition:all .2s;letter-spacing:0.5px}
+.lbtn.on{background:var(--accent);color:#fff}
+.nav-cta{background:var(--accent);color:#fff;border:none;font-family:'Inter',sans-serif;font-size:13px;font-weight:600;padding:9px 22px;border-radius:22px;cursor:pointer;margin-left:14px;transition:all .2s;letter-spacing:0.2px}
+.nav-cta:hover{background:#c94718;transform:translateY(-1px)}
 
-/* HERO */
-.hero{background:var(--navy);padding:80px 5% 100px;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;top:-80px;right:-80px;width:500px;height:500px;background:radial-gradient(circle,rgba(232,92,44,0.15) 0%,transparent 65%);pointer-events:none}
-.hero::after{content:'';position:absolute;bottom:-60px;left:20%;width:400px;height:400px;background:radial-gradient(circle,rgba(26,158,143,0.1) 0%,transparent 65%);pointer-events:none}
-.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(232,92,44,0.15);border:1px solid rgba(232,92,44,0.3);color:var(--accent2);font-size:12px;font-weight:500;padding:6px 16px;border-radius:20px;margin-bottom:28px;letter-spacing:0.5px;text-transform:uppercase}
-.hero-badge::before{content:'';width:6px;height:6px;background:var(--accent);border-radius:50%;animation:pulse 2s infinite}
-@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.3)}}
-h1{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(2.2rem,4.5vw,3.6rem);color:var(--white);line-height:1.1;max-width:680px;margin-bottom:20px;letter-spacing:-1px}
-h1 .highlight{color:var(--accent)}
-.hero-sub{color:rgba(255,255,255,0.65);font-size:18px;max-width:520px;line-height:1.6;margin-bottom:40px;font-weight:300}
-.hero-btns{display:flex;gap:14px;flex-wrap:wrap}
-.btn-primary{background:var(--accent);color:var(--white);border:none;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:500;padding:14px 32px;border-radius:30px;cursor:pointer;transition:all .2s}
-.btn-primary:hover{background:#d0501f;transform:translateY(-2px)}
-.btn-ghost{background:transparent;color:rgba(255,255,255,0.8);border:1.5px solid rgba(255,255,255,0.25);font-family:'DM Sans',sans-serif;font-size:15px;font-weight:400;padding:14px 32px;border-radius:30px;cursor:pointer;transition:all .2s}
-.btn-ghost:hover{border-color:rgba(255,255,255,0.6);color:var(--white)}
-.hero-stats{display:flex;gap:40px;margin-top:64px;padding-top:48px;border-top:1px solid rgba(255,255,255,0.08);flex-wrap:wrap}
-.stat{display:flex;flex-direction:column;gap:4px}
-.stat-num{font-family:'Syne',sans-serif;font-weight:700;font-size:28px;color:var(--white)}
-.stat-num span{color:var(--accent)}
-.stat-label{font-size:13px;color:rgba(255,255,255,0.45);letter-spacing:0.3px}
+/* ── HERO ── */
+.hero{
+  min-height:100vh;
+  background:var(--navy);
+  display:flex;
+  align-items:center;
+  padding:120px 6% 80px;
+  position:relative;
+  overflow:hidden;
+}
+.hero-bg{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse 60% 50% at 80% 30%, rgba(232,86,31,0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 40% at 20% 70%, rgba(0,184,148,0.08) 0%, transparent 55%),
+    radial-gradient(ellipse 80% 60% at 50% 50%, rgba(15,31,61,0.8) 0%, transparent 100%);
+  pointer-events:none;
+}
+.hero-grid{
+  position:absolute;inset:0;
+  background-image:linear-gradient(rgba(255,255,255,0.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.02) 1px,transparent 1px);
+  background-size:60px 60px;
+  pointer-events:none;
+}
+.hero-content{position:relative;z-index:1;max-width:700px}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(232,86,31,0.12);
+  border:1px solid rgba(232,86,31,0.25);
+  color:var(--accent2);
+  font-size:11px;font-weight:600;
+  padding:7px 16px;border-radius:20px;
+  margin-bottom:32px;
+  letter-spacing:1px;text-transform:uppercase;
+}
+.pulse{width:7px;height:7px;background:var(--accent);border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.4);opacity:.6}}
 
-/* STRIP */
-.strip{background:var(--accent);padding:14px 5%;overflow:hidden;white-space:nowrap}
-.strip-inner{display:inline-flex;gap:48px;animation:scroll-x 20s linear infinite}
-@keyframes scroll-x{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-.strip-item{color:var(--white);font-size:13px;font-weight:500;letter-spacing:0.8px;text-transform:uppercase;display:inline-flex;align-items:center;gap:10px}
-.strip-dot{width:4px;height:4px;background:rgba(255,255,255,0.5);border-radius:50%;display:inline-block}
+h1{
+  font-family:'Syne',sans-serif;
+  font-weight:800;
+  font-size:clamp(2.6rem,5.5vw,4.2rem);
+  color:#fff;
+  line-height:1.05;
+  letter-spacing:-2px;
+  margin-bottom:24px;
+}
+h1 .acc{
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
+}
+.hero-p{color:rgba(255,255,255,0.6);font-size:18px;line-height:1.7;max-width:500px;margin-bottom:44px;font-weight:300}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:70px}
+.btn-a{
+  background:linear-gradient(135deg,var(--accent),#c94718);
+  color:#fff;border:none;
+  font-family:'Inter',sans-serif;font-size:15px;font-weight:600;
+  padding:15px 34px;border-radius:30px;cursor:pointer;
+  transition:all .25s;
+  box-shadow:0 8px 24px rgba(232,86,31,0.35);
+}
+.btn-a:hover{transform:translateY(-3px);box-shadow:0 14px 32px rgba(232,86,31,0.45)}
+.btn-b{
+  background:rgba(255,255,255,0.07);
+  color:rgba(255,255,255,0.85);
+  border:1px solid rgba(255,255,255,0.15);
+  font-family:'Inter',sans-serif;font-size:15px;font-weight:500;
+  padding:15px 34px;border-radius:30px;cursor:pointer;
+  transition:all .25s;backdrop-filter:blur(10px);
+}
+.btn-b:hover{background:rgba(255,255,255,0.12);border-color:rgba(255,255,255,0.3)}
+.hero-stats{display:flex;gap:48px;flex-wrap:wrap}
+.hstat{display:flex;flex-direction:column;gap:3px}
+.hstat-n{font-family:'Syne',sans-serif;font-size:2rem;font-weight:800;color:#fff}
+.hstat-n em{color:var(--accent);font-style:normal}
+.hstat-l{font-size:12px;color:rgba(255,255,255,0.4);letter-spacing:0.5px;text-transform:uppercase}
+.hero-divider{width:1px;height:48px;background:rgba(255,255,255,0.1);align-self:center}
 
-/* SECTIONS */
-.section{padding:80px 5%}
-.section-light{background:var(--light)}
-.eyebrow{font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
-h2{font-family:'Syne',sans-serif;font-weight:700;font-size:clamp(1.8rem,3vw,2.6rem);line-height:1.15;letter-spacing:-0.5px;margin-bottom:16px}
-.section-sub{color:var(--muted);font-size:17px;line-height:1.65;max-width:560px;margin-bottom:48px}
+/* ── TICKER ── */
+.ticker{background:var(--accent);padding:13px 0;overflow:hidden;white-space:nowrap}
+.ticker-track{display:inline-flex;gap:0;animation:tick 18s linear infinite}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.ticker-item{display:inline-flex;align-items:center;padding:0 32px;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#fff}
+.ticker-item::after{content:'✦';margin-left:32px;opacity:0.5;font-size:8px}
 
-/* SERVICES GRID */
-.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
-.service-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:28px;transition:all .25s;cursor:pointer;position:relative;overflow:hidden}
-.service-card::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:var(--accent);opacity:0;transition:opacity .25s}
-.service-card:hover{border-color:rgba(232,92,44,0.3);transform:translateY(-4px);box-shadow:0 12px 32px rgba(11,24,41,0.08)}
-.service-card:hover::before{opacity:1}
-.service-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;font-size:22px}
-.icon-orange{background:rgba(232,92,44,0.1)}
-.icon-teal{background:rgba(26,158,143,0.1)}
-.icon-blue{background:rgba(37,99,235,0.1)}
-.icon-amber{background:rgba(245,166,35,0.1)}
-.service-title{font-family:'Syne',sans-serif;font-size:16px;font-weight:700;margin-bottom:8px;color:var(--text)}
-.service-desc{font-size:14px;color:var(--muted);line-height:1.55}
-.service-tag{display:inline-block;font-size:11px;font-weight:500;padding:3px 10px;border-radius:10px;margin-top:14px}
-.tag-core{background:rgba(232,92,44,0.1);color:var(--accent)}
-.tag-expand{background:rgba(26,158,143,0.1);color:var(--teal)}
-.tag-plus{background:rgba(245,166,35,0.1);color:#9a6f00}
+/* ── SECTION BASE ── */
+.sec{padding:100px 6%}
+.sec-light{background:var(--light)}
+.sec-white{background:#fff}
+.label{font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+h2{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(2rem,3.5vw,3rem);line-height:1.1;letter-spacing:-1px;margin-bottom:18px;color:var(--text)}
+.sub{color:var(--muted);font-size:17px;line-height:1.7;max-width:560px;margin-bottom:56px;font-weight:300}
 
-/* HOW IT WORKS */
-.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0;position:relative}
-.steps::before{content:'';position:absolute;top:32px;left:10%;right:10%;height:1px;background:repeating-linear-gradient(to right,var(--border) 0,var(--border) 8px,transparent 8px,transparent 16px);z-index:0}
-.step{position:relative;z-index:1;text-align:center;padding:0 20px}
-.step-num{width:64px;height:64px;border-radius:50%;background:var(--navy);color:var(--white);font-family:'Syne',sans-serif;font-size:20px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;border:3px solid var(--light)}
-.step:nth-child(2) .step-num{background:var(--accent)}
-.step:nth-child(3) .step-num{background:var(--teal)}
-.step-title{font-family:'Syne',sans-serif;font-size:15px;font-weight:700;margin-bottom:8px}
-.step-desc{font-size:13px;color:var(--muted);line-height:1.55}
+/* ── CAROUSEL ── */
+.carousel-wrap{position:relative}
+.carousel-viewport{overflow:hidden;border-radius:20px}
+.carousel-track{display:flex;gap:24px;transition:transform .5s cubic-bezier(.4,0,.2,1);will-change:transform}
+.c-card{
+  min-width:calc(33.333% - 16px);
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:20px;
+  padding:36px 32px;
+  position:relative;
+  overflow:hidden;
+  transition:all .3s;
+  cursor:pointer;
+  flex-shrink:0;
+}
+.c-card::after{
+  content:'';
+  position:absolute;
+  top:0;left:0;right:0;
+  height:3px;
+  background:linear-gradient(90deg,var(--accent),var(--accent2));
+  opacity:0;
+  transition:opacity .3s;
+}
+.c-card:hover{transform:translateY(-6px);box-shadow:0 20px 48px rgba(0,0,0,0.1);border-color:rgba(232,86,31,0.2)}
+.c-card:hover::after{opacity:1}
+.c-icon{
+  width:56px;height:56px;border-radius:16px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:26px;margin-bottom:22px;
+}
+.ic-o{background:linear-gradient(135deg,rgba(232,86,31,0.12),rgba(232,86,31,0.06))}
+.ic-t{background:linear-gradient(135deg,rgba(0,184,148,0.12),rgba(0,184,148,0.06))}
+.ic-b{background:linear-gradient(135deg,rgba(59,130,246,0.12),rgba(59,130,246,0.06))}
+.ic-a{background:linear-gradient(135deg,rgba(245,166,35,0.12),rgba(245,166,35,0.06))}
+.ic-p{background:linear-gradient(135deg,rgba(139,92,246,0.12),rgba(139,92,246,0.06))}
+.ic-g{background:linear-gradient(135deg,rgba(16,185,129,0.12),rgba(16,185,129,0.06))}
+.c-tag{
+  display:inline-block;font-size:10px;font-weight:700;
+  padding:4px 11px;border-radius:10px;margin-bottom:16px;
+  letter-spacing:0.8px;text-transform:uppercase;
+}
+.tag-core{background:rgba(232,86,31,0.1);color:var(--accent)}
+.tag-grow{background:rgba(0,184,148,0.1);color:var(--teal)}
+.tag-plus{background:rgba(245,166,35,0.1);color:#b07d00}
+.tag-soon{background:rgba(99,102,241,0.1);color:#6366f1}
+.c-title{font-family:'Syne',sans-serif;font-size:18px;font-weight:800;margin-bottom:10px;color:var(--text)}
+.c-desc{font-size:14px;color:var(--muted);line-height:1.65;font-weight:300}
+.c-arrow{
+  position:absolute;bottom:24px;right:24px;
+  width:32px;height:32px;border-radius:50%;
+  background:var(--light);
+  display:flex;align-items:center;justify-content:center;
+  font-size:14px;transition:all .3s;
+  color:var(--accent);
+}
+.c-card:hover .c-arrow{background:var(--accent);color:#fff;transform:translateX(3px)}
 
-/* CONTACT */
-.contact-wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:60px;align-items:start}
-.contact-info h2{color:var(--white)}
-.contact-info .section-sub{color:rgba(255,255,255,0.55);max-width:400px}
-.contact-detail{display:flex;align-items:center;gap:12px;margin-top:16px;color:rgba(255,255,255,0.7);font-size:14px}
-.contact-icon{width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
-.form-card{background:var(--white);border-radius:16px;padding:36px}
-.form-group{margin-bottom:18px}
-label{display:block;font-size:13px;font-weight:500;color:var(--muted);margin-bottom:7px}
-input,select,textarea{width:100%;background:var(--light);border:1px solid var(--border);border-radius:8px;padding:11px 14px;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--text);outline:none;transition:border .2s}
-input:focus,select:focus,textarea:focus{border-color:var(--accent)}
-textarea{resize:vertical;min-height:90px}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.btn-submit{width:100%;background:var(--accent);color:var(--white);border:none;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:500;padding:14px;border-radius:30px;cursor:pointer;margin-top:8px;transition:background .2s}
-.btn-submit:hover{background:#d0501f}
+/* carousel nav */
+.car-nav{display:flex;align-items:center;justify-content:space-between;margin-top:36px}
+.car-dots{display:flex;gap:8px}
+.dot{width:8px;height:8px;border-radius:4px;background:var(--border);transition:all .3s;cursor:pointer}
+.dot.on{width:24px;background:var(--accent)}
+.car-btns{display:flex;gap:10px}
+.cbtn{
+  width:44px;height:44px;border-radius:50%;
+  background:var(--white);border:1.5px solid var(--border);
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;transition:all .2s;font-size:16px;color:var(--text);
+}
+.cbtn:hover{background:var(--accent);border-color:var(--accent);color:#fff}
+.cbtn:disabled{opacity:0.3;cursor:default}
+.cbtn:disabled:hover{background:var(--white);border-color:var(--border);color:var(--text)}
 
-/* FOOTER */
-footer{background:var(--navy);padding:48px 5% 32px;border-top:1px solid rgba(255,255,255,0.06)}
-.footer-top{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:40px;margin-bottom:40px}
-.footer-desc{color:rgba(255,255,255,0.45);font-size:13px;line-height:1.6;max-width:280px;margin-top:12px}
-.footer-col h4{font-family:'Syne',sans-serif;font-size:13px;font-weight:600;color:rgba(255,255,255,0.5);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:16px}
-.footer-col a{display:block;color:rgba(255,255,255,0.65);font-size:13px;margin-bottom:10px;text-decoration:none;transition:color .2s}
+/* ── HOW IT WORKS ── */
+.steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;position:relative}
+.steps-grid::before{
+  content:'';position:absolute;
+  top:40px;left:calc(16.666% + 12px);right:calc(16.666% + 12px);
+  height:1px;
+  background:linear-gradient(90deg,transparent,var(--border),var(--border),transparent);
+  z-index:0;
+}
+.step-box{
+  background:#fff;border:1px solid var(--border);
+  border-radius:20px;padding:36px 28px;
+  text-align:center;position:relative;z-index:1;
+  transition:all .3s;
+}
+.step-box:hover{transform:translateY(-5px);box-shadow:0 16px 40px rgba(0,0,0,0.08)}
+.step-n{
+  width:80px;height:80px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Syne',sans-serif;font-size:28px;font-weight:800;
+  margin:0 auto 24px;border:2px solid var(--border);
+  color:#fff;
+}
+.sn1{background:var(--navy)}
+.sn2{background:var(--accent)}
+.sn3{background:var(--teal)}
+.step-title{font-family:'Syne',sans-serif;font-size:17px;font-weight:800;margin-bottom:10px}
+.step-desc{font-size:14px;color:var(--muted);line-height:1.65;font-weight:300}
+
+/* ── TRUST BAND ── */
+.trust{
+  background:var(--navy);
+  padding:64px 6%;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:2px;
+}
+.trust-item{
+  text-align:center;padding:32px 20px;
+  border-right:1px solid rgba(255,255,255,0.06);
+}
+.trust-item:last-child{border:none}
+.trust-n{font-family:'Syne',sans-serif;font-size:2.8rem;font-weight:800;color:#fff;line-height:1}
+.trust-n em{color:var(--accent);font-style:normal}
+.trust-l{font-size:12px;color:rgba(255,255,255,0.4);margin-top:8px;letter-spacing:0.5px;text-transform:uppercase}
+
+/* ── CONTACT ── */
+.contact-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:72px;align-items:start}
+.contact-left h2{color:#fff}
+.contact-left .sub{color:rgba(255,255,255,0.5);margin-bottom:36px}
+.contact-detail{
+  display:flex;align-items:flex-start;gap:14px;
+  margin-bottom:20px;color:rgba(255,255,255,0.65);font-size:14px;line-height:1.5;
+}
+.ci{
+  width:40px;height:40px;min-width:40px;
+  border-radius:10px;background:rgba(255,255,255,0.06);
+  display:flex;align-items:center;justify-content:center;font-size:17px;
+  border:1px solid rgba(255,255,255,0.08);
+}
+.form-box{
+  background:#fff;border-radius:20px;padding:40px;
+  box-shadow:0 32px 80px rgba(0,0,0,0.3);
+}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.fg{margin-bottom:18px}
+.fg label{display:block;font-size:12px;font-weight:600;color:var(--muted);margin-bottom:8px;letter-spacing:0.3px;text-transform:uppercase}
+.fg input,.fg select,.fg textarea{
+  width:100%;background:var(--light);
+  border:1.5px solid var(--border);
+  border-radius:10px;padding:12px 16px;
+  font-family:'Inter',sans-serif;font-size:14px;color:var(--text);
+  outline:none;transition:all .2s;font-weight:400;
+}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--accent);background:#fff;box-shadow:0 0 0 3px rgba(232,86,31,0.08)}
+.fg textarea{resize:vertical;min-height:100px}
+.submit-btn{
+  width:100%;
+  background:linear-gradient(135deg,var(--accent),#c94718);
+  color:#fff;border:none;
+  font-family:'Inter',sans-serif;font-size:15px;font-weight:700;
+  padding:16px;border-radius:30px;cursor:pointer;
+  margin-top:8px;transition:all .25s;
+  box-shadow:0 8px 24px rgba(232,86,31,0.3);
+  letter-spacing:0.3px;
+}
+.submit-btn:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(232,86,31,0.4)}
+
+/* ── FOOTER ── */
+footer{background:#060e1c;padding:60px 6% 32px;border-top:1px solid rgba(255,255,255,0.04)}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:60px;margin-bottom:48px}
+.footer-brand p{color:rgba(255,255,255,0.35);font-size:13px;line-height:1.7;margin-top:14px;font-weight:300;max-width:260px}
+.footer-col h5{font-family:'Syne',sans-serif;font-size:11px;font-weight:700;color:rgba(255,255,255,0.35);letter-spacing:2px;text-transform:uppercase;margin-bottom:18px}
+.footer-col a{display:block;color:rgba(255,255,255,0.55);font-size:13px;margin-bottom:10px;text-decoration:none;transition:color .2s;font-weight:300}
 .footer-col a:hover{color:var(--accent)}
-.footer-bottom{border-top:1px solid rgba(255,255,255,0.06);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
-.footer-bottom p{color:rgba(255,255,255,0.3);font-size:12px}
-.footer-badge{color:rgba(255,255,255,0.3);font-size:12px}
-.footer-badge span{color:var(--accent)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.05);padding-top:28px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.footer-bottom p{color:rgba(255,255,255,0.2);font-size:12px}
+.footer-badge{color:rgba(255,255,255,0.2);font-size:12px}
+.footer-badge strong{color:var(--accent)}
 
-@media(max-width:700px){
-  .contact-wrap{grid-template-columns:1fr}
-  .steps::before{display:none}
-  .form-row{grid-template-columns:1fr}
-  h1{font-size:2rem}
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  .c-card{min-width:calc(50% - 12px)}
+  .steps-grid{grid-template-columns:1fr}
+  .steps-grid::before{display:none}
+  .trust{grid-template-columns:1fr 1fr}
+  .trust-item{border-bottom:1px solid rgba(255,255,255,0.06)}
+  .contact-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+  .c-card{min-width:calc(100% - 0px)}
+  .hero-stats{gap:24px}
+  .frow{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .trust{grid-template-columns:1fr 1fr}
+  h1{letter-spacing:-1px}
+  nav{padding:0 4%}
+  .sec{padding:70px 4%}
+  .hero{padding:110px 4% 60px}
 }
 </style>
 </head>
 <body class="lang-en">
 
-<!-- NAV -->
 <nav>
-  <div class="logo-wrap">
-    <svg class="logo-svg" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="22" cy="22" r="21" fill="none" stroke="#E85C2C" stroke-width="1.5" opacity="0.4"/>
-      <circle cx="22" cy="22" r="15" fill="#132235"/>
-      <path d="M22 11L31 18.5V33H13V18.5Z" fill="none" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
-      <path d="M14 20L22 13L30 20" fill="none" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
-      <rect x="18" y="24" width="8" height="9" rx="1.5" fill="#E85C2C"/>
-      <circle cx="7" cy="22" r="2" fill="#E85C2C"/>
-      <circle cx="37" cy="22" r="2" fill="#E85C2C"/>
-      <circle cx="22" cy="7" r="1.5" fill="#F5A623" opacity="0.7"/>
-      <circle cx="22" cy="37" r="1.5" fill="#F5A623" opacity="0.7"/>
+  <a class="logo" href="#">
+    <svg class="logo-mark" aria-hidden="true" viewBox="0 0 40 40" fill="none">
+      <circle cx="20" cy="20" r="19" stroke="#e8561f" stroke-width="1.5" opacity="0.5"/>
+      <circle cx="20" cy="20" r="13" fill="#0f1f3d"/>
+      <path d="M20 9L28 16V31H12V16Z" fill="none" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M12 17.5L20 11L28 17.5" fill="none" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+      <rect x="16.5" y="22" width="7" height="9" rx="1.5" fill="#e8561f"/>
+      <circle cx="5" cy="20" r="2" fill="#e8561f"/>
+      <circle cx="35" cy="20" r="2" fill="#e8561f"/>
     </svg>
-    <div class="logo-name">Solutions<span>404</span></div>
-  </div>
-  <div class="nav-right">
-    <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
-    <button class="lang-btn" id="btn-es" onclick="setLang('es')">ES</button>
-    <button class="cta-nav" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+    <span class="logo-text">Solutions<em>404</em></span>
+  </a>
+  <div class="nav-links">
+    <div class="lang-pill">
+      <button class="lbtn on" id="btn-en" aria-label="Switch to English" onclick="setLang('en')">EN</button>
+      <button class="lbtn" id="btn-es" aria-label="Switch to Spanish" onclick="setLang('es')">ES</button>
+    </div>
+    <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
       <span class="t-en">Get a Quote</span>
       <span class="t-es">Cotización</span>
     </button>
   </div>
 </nav>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-badge">
-    <span class="t-en">✦ Trusted Home &amp; Business Solutions</span>
-    <span class="t-es">✦ Soluciones Confiables para el Hogar y Negocio</span>
-  </div>
-  <h1>
-    <span class="t-en block">Your Home. <span class="highlight">Fixed.</span><br>Your Business. <span class="highlight">Upgraded.</span></span>
-    <span class="t-es block">Tu Hogar. <span class="highlight">Resuelto.</span><br>Tu Negocio. <span class="highlight">Mejorado.</span></span>
-  </h1>
-  <p class="hero-sub t-en block">Connecting Houston homeowners and businesses with trusted, vetted professionals in roofing, A/C, water purification and more — all in one place.</p>
-  <p class="hero-sub t-es block">Conectamos a propietarios y negocios en Houston con profesionales verificados en techado, A/C, purificación de agua y mucho más — todo en un solo lugar.</p>
-  <div class="hero-btns">
-    <button class="btn-primary" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">
-      <span class="t-en">Explore Services</span>
-      <span class="t-es">Ver Servicios</span>
-    </button>
-    <button class="btn-ghost" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
-      <span class="t-en">Get a Free Quote</span>
-      <span class="t-es">Cotización Gratis</span>
-    </button>
-  </div>
-  <div class="hero-stats">
-    <div class="stat">
-      <div class="stat-num">200<span>+</span></div>
-      <div class="stat-label"><span class="t-en">Trusted Pros</span><span class="t-es">Profesionales</span></div>
-    </div>
-    <div class="stat">
-      <div class="stat-num">5<span>★</span></div>
-      <div class="stat-label"><span class="t-en">Average Rating</span><span class="t-es">Calificación</span></div>
-    </div>
-    <div class="stat">
-      <div class="stat-num">24<span>h</span></div>
-      <div class="stat-label"><span class="t-en">Response Time</span><span class="t-es">Respuesta</span></div>
-    </div>
-    <div class="stat">
-      <div class="stat-num">TX<span>✓</span></div>
-      <div class="stat-label"><span class="t-en">Licensed &amp; Insured</span><span class="t-es">Licenciados</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- SCROLLING STRIP -->
-<div class="strip">
-  <div class="strip-inner" id="strip-content"></div>
-</div>
-
-<!-- SERVICES -->
-<section class="section section-light" id="services">
-  <p class="eyebrow"><span class="t-en">Our Services</span><span class="t-es">Nuestros Servicios</span></p>
-  <h2><span class="t-en">Solutions for Every Need</span><span class="t-es">Soluciones para Cada Necesidad</span></h2>
-  <p class="section-sub t-en block">From urgent repairs to long-term improvements — we connect you with the right professional for every job.</p>
-  <p class="section-sub t-es block">Desde reparaciones urgentes hasta mejoras a largo plazo — te conectamos con el profesional adecuado para cada trabajo.</p>
-  <div class="services-grid">
-    <div class="service-card">
-      <div class="service-icon icon-orange">🏠</div>
-      <div class="service-title"><span class="t-en">Roofing</span><span class="t-es">Techado</span></div>
-      <div class="service-desc t-en block">Repairs, replacements, inspections &amp; storm damage — residential and commercial. Only licensed, insured roofers.</div>
-      <div class="service-desc t-es block">Reparaciones, reemplazos, inspecciones y daños por tormenta — residencial y comercial. Solo contratistas licenciados.</div>
-      <span class="service-tag tag-core"><span class="t-en">Core Service</span><span class="t-es">Servicio Principal</span></span>
-    </div>
-    <div class="service-card">
-      <div class="service-icon icon-teal">❄️</div>
-      <div class="service-title"><span class="t-en">A/C &amp; HVAC</span><span class="t-es">Aire Acondicionado</span></div>
-      <div class="service-desc t-en block">Installation, tune-ups, emergency repairs and system replacements. Stay cool every Houston summer.</div>
-      <div class="service-desc t-es block">Instalación, mantenimiento, reparaciones de emergencia y reemplazos. Mantente fresco en el verano de Houston.</div>
-      <span class="service-tag tag-core"><span class="t-en">Core Service</span><span class="t-es">Servicio Principal</span></span>
-    </div>
-    <div class="service-card">
-      <div class="service-icon icon-blue">💧</div>
-      <div class="service-title"><span class="t-en">Water Filtration &amp; Purification</span><span class="t-es">Filtración y Purificación de Agua</span></div>
-      <div class="service-desc t-en block">Whole-home systems, under-sink filters, water softeners &amp; RO systems. Clean water for your family.</div>
-      <div class="service-desc t-es block">Sistemas para todo el hogar, filtros bajo lavabo, suavizadores y sistemas RO. Agua limpia para tu familia.</div>
-      <span class="service-tag tag-core"><span class="t-en">Core Service</span><span class="t-es">Servicio Principal</span></span>
-    </div>
-    <div class="service-card">
-      <div class="service-icon icon-amber">📈</div>
-      <div class="service-title"><span class="t-en">Marketing Solutions</span><span class="t-es">Soluciones de Marketing</span></div>
-      <div class="service-desc t-en block">Local SEO, paid ads, social media management and brand building for home service businesses ready to grow.</div>
-      <div class="service-desc t-es block">SEO local, anuncios pagados, gestión de redes sociales y construcción de marca para negocios listos para crecer.</div>
-      <span class="service-tag tag-expand"><span class="t-en">Growing Service</span><span class="t-es">Servicio en Crecimiento</span></span>
-    </div>
-    <div class="service-card">
-      <div class="service-icon icon-teal">⚙️</div>
-      <div class="service-title"><span class="t-en">Software &amp; Automation</span><span class="t-es">Software y Automatización</span></div>
-      <div class="service-desc t-en block">Custom workflows, CRM integrations, scheduling tools and web development for service businesses.</div>
-      <div class="service-desc t-es block">Flujos de trabajo personalizados, integraciones CRM, herramientas de agenda y desarrollo web.</div>
-      <span class="service-tag tag-plus"><span class="t-en">Add-on</span><span class="t-es">Adicional</span></span>
-    </div>
-    <div class="service-card" style="background:var(--navy);border-color:transparent">
-      <div class="service-icon" style="background:rgba(232,92,44,0.2)">➕</div>
-      <div class="service-title" style="color:var(--white)"><span class="t-en">More Coming Soon</span><span class="t-es">Más Próximamente</span></div>
-      <div class="service-desc t-en block" style="color:rgba(255,255,255,0.5)">Plumbing, electrical, landscaping and more. Are you a contractor? Join our network.</div>
-      <div class="service-desc t-es block" style="color:rgba(255,255,255,0.5)">Plomería, electricidad, paisajismo y más. ¿Eres contratista? Únete a nuestra red.</div>
-      <span class="service-tag" style="background:rgba(232,92,44,0.2);color:var(--accent)"><span class="t-en">Join Our Network →</span><span class="t-es">Únete a la Red →</span></span>
-    </div>
-  </div>
-</section>
-
-<!-- HOW IT WORKS -->
-<section class="section" style="background:var(--white)">
-  <p class="eyebrow"><span class="t-en">How It Works</span><span class="t-es">Cómo Funciona</span></p>
-  <h2><span class="t-en">Simple. Fast. Trusted.</span><span class="t-es">Simple. Rápido. Confiable.</span></h2>
-  <p class="section-sub t-en block">Getting matched with the right pro takes less than 2 minutes.</p>
-  <p class="section-sub t-es block">Conectarte con el profesional correcto toma menos de 2 minutos.</p>
-  <div class="steps">
-    <div class="step">
-      <div class="step-num">1</div>
-      <div class="step-title"><span class="t-en">Tell Us Your Need</span><span class="t-es">Cuéntanos Tu Necesidad</span></div>
-      <div class="step-desc t-en block">Select a service and describe your project briefly. No commitment required.</div>
-      <div class="step-desc t-es block">Selecciona un servicio y describe tu proyecto. Sin compromiso.</div>
-    </div>
-    <div class="step">
-      <div class="step-num">2</div>
-      <div class="step-title"><span class="t-en">We Match You</span><span class="t-es">Te Conectamos</span></div>
-      <div class="step-desc t-en block">Our directory connects you with vetted, licensed pros in your area within hours.</div>
-      <div class="step-desc t-es block">Te conectamos con profesionales verificados en tu área en pocas horas.</div>
-    </div>
-    <div class="step">
-      <div class="step-num">3</div>
-      <div class="step-title"><span class="t-en">Get It Done</span><span class="t-es">Haz Que Suceda</span></div>
-      <div class="step-desc t-en block">Review quotes, choose your pro, get the job done and leave a review.</div>
-      <div class="step-desc t-es block">Revisa cotizaciones, elige tu profesional y deja una reseña para ayudar a otros.</div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="section" id="contact" style="background:var(--navy)">
-  <div class="contact-wrap">
-    <div class="contact-info">
-      <p class="eyebrow" style="color:var(--accent2)"><span class="t-en">Contact Us</span><span class="t-es">Contáctanos</span></p>
-      <h2><span class="t-en">Let's Get Your Project Started</span><span class="t-es">Empecemos Tu Proyecto Hoy</span></h2>
-      <p class="section-sub t-en block" style="color:rgba(255,255,255,0.55)">Whether you need a repair, an upgrade, or want to join our directory as a contractor — reach out below.</p>
-      <p class="section-sub t-es block" style="color:rgba(255,255,255,0.55)">Ya sea que necesites una reparación, una mejora, o quieras unirte como contratista — escríbenos abajo.</p>
-      <div class="contact-detail"><div class="contact-icon">📍</div><span>Greater Houston, TX &amp; Surrounding Areas</span></div>
-      <div class="contact-detail"><div class="contact-icon">🌐</div><span>solutions404.com</span></div>
-      <div class="contact-detail"><div class="contact-icon">⏱</div><span class="t-en">Response within 24 hours</span><span class="t-es">Respuesta en 24 horas</span></div>
-    </div>
-    <div>
-      <div class="form-card">
-        <div class="form-row">
-          <div class="form-group">
-            <label><span class="t-en">First Name</span><span class="t-es">Nombre</span></label>
-            <input type="text" id="ph-first">
-          </div>
-          <div class="form-group">
-            <label><span class="t-en">Last Name</span><span class="t-es">Apellido</span></label>
-            <input type="text" id="ph-last">
-          </div>
-        </div>
-        <div class="form-group">
-          <label>Email</label>
-          <input type="email" placeholder="you@email.com">
-        </div>
-        <div class="form-group">
-          <label><span class="t-en">Service Needed</span><span class="t-es">Servicio Requerido</span></label>
-          <select id="service-select"></select>
-        </div>
-        <div class="form-group">
-          <label><span class="t-en">Tell us about your project</span><span class="t-es">Cuéntanos sobre tu proyecto</span></label>
-          <textarea id="ph-msg"></textarea>
-        </div>
-        <button class="btn-submit"><span class="t-en">Send Request →</span><span class="t-es">Enviar Solicitud →</span></button>
+<main>
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <div class="hero-badge"><span class="pulse"></span><span class="t-en">Trusted Home &amp; Business Directory — Houston TX</span><span class="t-es">Directorio Confiable — Houston TX</span></div>
+      <h1>
+        <span class="t-en b">Your Home.<br><span class="acc">Fixed &amp; Upgraded.</span></span>
+        <span class="t-es b">Tu Hogar.<br><span class="acc">Resuelto y Mejorado.</span></span>
+      </h1>
+      <p class="hero-p t-en b">Connecting Houston homeowners and businesses with trusted, vetted professionals in roofing, A/C, water purification and more.</p>
+      <p class="hero-p t-es b">Conectamos propietarios y negocios en Houston con profesionales verificados en techado, A/C, purificación de agua y más.</p>
+      <div class="hero-actions">
+        <button class="btn-a" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">
+          <span class="t-en">Explore Services</span><span class="t-es">Ver Servicios</span>
+        </button>
+        <button class="btn-b" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+          <span class="t-en">Free Quote →</span><span class="t-es">Cotización Gratis →</span>
+        </button>
+      </div>
+      <div class="hero-stats">
+        <div class="hstat"><div class="hstat-n">200<em>+</em></div><div class="hstat-l"><span class="t-en">Vetted Pros</span><span class="t-es">Profesionales</span></div></div>
+        <div class="hero-divider"></div>
+        <div class="hstat"><div class="hstat-n">5<em>★</em></div><div class="hstat-l"><span class="t-en">Avg Rating</span><span class="t-es">Calificación</span></div></div>
+        <div class="hero-divider"></div>
+        <div class="hstat"><div class="hstat-n">24<em>h</em></div><div class="hstat-l"><span class="t-en">Response</span><span class="t-es">Respuesta</span></div></div>
+        <div class="hero-divider"></div>
+        <div class="hstat"><div class="hstat-n">TX<em>✓</em></div><div class="hstat-l"><span class="t-en">Licensed</span><span class="t-es">Licenciado</span></div></div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- FOOTER -->
+  <div class="ticker"><div class="ticker-track" id="ticker-track"></div></div>
+
+  <section class="sec sec-light" id="services">
+    <div class="label"><span class="t-en">Our Services</span><span class="t-es">Nuestros Servicios</span></div>
+    <h2><span class="t-en">Solutions for Every Need</span><span class="t-es">Soluciones para Cada Necesidad</span></h2>
+    <p class="sub t-en b">From urgent repairs to long-term improvements — one trusted directory for every job.</p>
+    <p class="sub t-es b">Desde reparaciones urgentes hasta mejoras a largo plazo — un directorio confiable para cada trabajo.</p>
+
+    <div class="carousel-wrap">
+      <div class="carousel-viewport">
+        <div class="carousel-track" id="car-track">
+
+          <div class="c-card">
+            <div class="c-icon ic-o">🏠</div>
+            <span class="c-tag tag-core"><span class="t-en">Core Service</span><span class="t-es">Servicio Principal</span></span>
+            <div class="c-title"><span class="t-en">Roofing</span><span class="t-es">Techado</span></div>
+            <p class="c-desc t-en b">Repairs, replacements, storm damage & inspections. Residential and commercial, fully licensed and insured.</p>
+            <p class="c-desc t-es b">Reparaciones, reemplazos, daños por tormenta e inspecciones. Residencial y comercial, licenciados y asegurados.</p>
+            <div class="c-arrow">→</div>
+          </div>
+
+          <div class="c-card">
+            <div class="c-icon ic-t">❄️</div>
+            <span class="c-tag tag-core"><span class="t-en">Core Service</span><span class="t-es">Servicio Principal</span></span>
+            <div class="c-title"><span class="t-en">A/C & HVAC</span><span class="t-es">Aire Acondicionado</span></div>
+            <p class="c-desc t-en b">Installation, tune-ups, emergency repairs and full system replacements. Beat every Houston summer.</p>
+            <p class="c-desc t-es b">Instalación, mantenimiento, emergencias y reemplazos completos. Ideal para los veranos de Houston.</p>
+            <div class="c-arrow">→</div>
+          </div>
+
+          <div class="c-card">
+            <div class="c-icon ic-b">💧</div>
+            <span class="c-tag tag-core"><span class="t-en">Core Service</span><span class="t-es">Servicio Principal</span></span>
+            <div class="c-title"><span class="t-en">Water Filtration</span><span class="t-es">Purificación de Agua</span></div>
+            <p class="c-desc t-en b">Whole-home systems, under-sink filters, water softeners & reverse osmosis. Clean water guaranteed.</p>
+            <p class="c-desc t-es b">Sistemas para todo el hogar, filtros bajo lavabo, suavizadores y ósmosis inversa. Agua limpia garantizada.</p>
+            <div class="c-arrow">→</div>
+          </div>
+
+          <div class="c-card">
+            <div class="c-icon ic-a">📈</div>
+            <span class="c-tag tag-grow"><span class="t-en">Growing</span><span class="t-es">En Crecimiento</span></span>
+            <div class="c-title"><span class="t-en">Marketing Solutions</span><span class="t-es">Soluciones de Marketing</span></div>
+            <p class="c-desc t-en b">Local SEO, paid ads, social media management and brand strategy for home service businesses ready to scale.</p>
+            <p class="c-desc t-es b">SEO local, anuncios pagados, redes sociales y estrategia de marca para negocios de servicios listos para crecer.</p>
+            <div class="c-arrow">→</div>
+          </div>
+
+          <div class="c-card">
+            <div class="c-icon ic-p">⚙️</div>
+            <span class="c-tag tag-plus"><span class="t-en">Add-on</span><span class="t-es">Adicional</span></span>
+            <div class="c-title"><span class="t-en">Software & Automation</span><span class="t-es">Software y Automatización</span></div>
+            <p class="c-desc t-en b">Custom workflows, CRM integrations, scheduling tools and web development tailored to service businesses.</p>
+            <p class="c-desc t-es b">Flujos de trabajo, integraciones CRM, herramientas de agenda y desarrollo web para negocios de servicios.</p>
+            <div class="c-arrow">→</div>
+          </div>
+
+          <div class="c-card" style="background:linear-gradient(135deg,var(--navy),#0f1f3d);border-color:rgba(232,86,31,0.2)">
+            <div class="c-icon" style="background:rgba(232,86,31,0.15)">➕</div>
+            <span class="c-tag tag-soon"><span class="t-en">Coming Soon</span><span class="t-es">Próximamente</span></span>
+            <div class="c-title" style="color:#fff"><span class="t-en">More Services</span><span class="t-es">Más Servicios</span></div>
+            <p class="c-desc t-en b" style="color:rgba(255,255,255,0.45)">Plumbing, electrical, landscaping & more. Are you a contractor? Join our growing network today.</p>
+            <p class="c-desc t-es b" style="color:rgba(255,255,255,0.45)">Plomería, electricidad, paisajismo y más. ¿Eres contratista? Únete a nuestra red en crecimiento.</p>
+            <div class="c-arrow" style="background:rgba(232,86,31,0.15);color:var(--accent)">→</div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="car-nav">
+        <div class="car-dots" id="car-dots"></div>
+        <div class="car-btns">
+          <button class="cbtn" id="car-prev" aria-label="Previous Service" onclick="carMove(-1)">←</button>
+          <button class="cbtn" id="car-next" aria-label="Next Service" onclick="carMove(1)">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec-white">
+    <div class="label"><span class="t-en">How It Works</span><span class="t-es">Cómo Funciona</span></div>
+    <h2><span class="t-en">Simple. Fast. Trusted.</span><span class="t-es">Simple. Rápido. Confiable.</span></h2>
+    <p class="sub t-en b">Getting matched with the right professional takes less than 2 minutes.</p>
+    <p class="sub t-es b">Conectarte con el profesional correcto toma menos de 2 minutos.</p>
+    <div class="steps-grid">
+      <div class="step-box">
+        <div class="step-n sn1">1</div>
+        <div class="step-title"><span class="t-en">Tell Us Your Need</span><span class="t-es">Cuéntanos Tu Necesidad</span></div>
+        <p class="step-desc t-en b">Choose a service category and briefly describe your project. Zero commitment required.</p>
+        <p class="step-desc t-es b">Elige una categoría y describe tu proyecto brevemente. Sin ningún compromiso.</p>
+      </div>
+      <div class="step-box">
+        <div class="step-n sn2">2</div>
+        <div class="step-title"><span class="t-en">We Match You</span><span class="t-es">Te Conectamos</span></div>
+        <p class="step-desc t-en b">Our directory instantly connects you with vetted, licensed pros in your area.</p>
+        <p class="step-desc t-es b">Nuestro directorio te conecta al instante con profesionales verificados y licenciados en tu área.</p>
+      </div>
+      <div class="step-box">
+        <div class="step-n sn3">3</div>
+        <div class="step-title"><span class="t-en">Get It Done</span><span class="t-es">Haz Que Suceda</span></div>
+        <p class="step-desc t-en b">Compare quotes, hire your pro and leave a review to help your community.</p>
+        <p class="step-desc t-es b">Compara cotizaciones, contrata a tu profesional y deja una reseña para ayudar a tu comunidad.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="trust">
+    <div class="trust-item">
+      <div class="trust-n">200<em>+</em></div>
+      <div class="trust-l"><span class="t-en">Vetted Professionals</span><span class="t-es">Profesionales Verificados</span></div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-n">5<em>★</em></div>
+      <div class="trust-l"><span class="t-en">Average Rating</span><span class="t-es">Calificación Promedio</span></div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-n">24<em>h</em></div>
+      <div class="trust-l"><span class="t-en">Response Time</span><span class="t-es">Tiempo de Respuesta</span></div>
+    </div>
+    <div class="trust-item" style="border:none">
+      <div class="trust-n">100<em>%</em></div>
+      <div class="trust-l"><span class="t-en">Licensed & Insured</span><span class="t-es">Licenciados y Asegurados</span></div>
+    </div>
+  </div>
+
+  <section class="sec" id="contact" style="background:var(--navy)">
+    <div class="contact-grid">
+      <div class="contact-left">
+        <div class="label" style="color:var(--accent2)"><span class="t-en">Contact Us</span><span class="t-es">Contáctanos</span></div>
+        <h2><span class="t-en">Let's Start Your Project</span><span class="t-es">Empecemos Tu Proyecto</span></h2>
+        <p class="sub t-en b">Need a repair, an upgrade, or want to join as a contractor? We'd love to hear from you.</p>
+        <p class="sub t-es b">¿Necesitas una reparación, mejora o quieres unirte como contratista? Nos encantaría saber de ti.</p>
+        <div class="contact-detail"><div class="ci">📍</div><div><strong style="color:#fff;display:block">Location</strong>Greater Houston, TX &amp; Surrounding Areas</div></div>
+        <div class="contact-detail"><div class="ci">🌐</div><div><strong style="color:#fff;display:block">Website</strong>solutions404.com</div></div>
+        <div class="contact-detail"><div class="ci">⏱</div><div><strong style="color:#fff;display:block"><span class="t-en">Response Time</span><span class="t-es">Tiempo de Respuesta</span></strong><span class="t-en">Within 24 hours</span><span class="t-es">En 24 horas</span></div></div>
+      </div>
+      <div>
+        <form id="contactForm" class="form-box">
+          <div class="frow">
+            <div class="fg">
+              <label><span class="t-en">First Name</span><span class="t-es">Nombre</span></label>
+              <input type="text" id="ph-fn" name="first_name" required>
+            </div>
+            <div class="fg">
+              <label><span class="t-en">Last Name</span><span class="t-es">Apellido</span></label>
+              <input type="text" id="ph-ln" name="last_name" required>
+            </div>
+          </div>
+          <div class="fg">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="you@email.com" required>
+          </div>
+          <div class="fg">
+            <label><span class="t-en">Phone (optional)</span><span class="t-es">Teléfono (opcional)</span></label>
+            <input type="tel" name="phone" placeholder="(713) 000-0000">
+          </div>
+          <div class="fg">
+            <label><span class="t-en">Service Needed</span><span class="t-es">Servicio Requerido</span></label>
+            <select id="svc-sel" name="service" required></select>
+          </div>
+          <div class="fg">
+            <label><span class="t-en">Tell us about your project</span><span class="t-es">Cuéntanos sobre tu proyecto</span></label>
+            <textarea id="ph-msg" name="message" required></textarea>
+          </div>
+          <button type="submit" id="submitBtn" class="submit-btn">
+            <span class="btn-text">
+              <span class="t-en">Send Request →</span>
+              <span class="t-es">Enviar Solicitud →</span>
+            </span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
 <footer>
-  <div class="footer-top">
-    <div>
-      <div class="logo-wrap">
-        <svg width="36" height="36" viewBox="0 0 44 44" fill="none">
-          <circle cx="22" cy="22" r="21" fill="none" stroke="#E85C2C" stroke-width="1.5" opacity="0.4"/>
-          <circle cx="22" cy="22" r="15" fill="#132235"/>
-          <path d="M22 11L31 18.5V33H13V18.5Z" fill="none" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
-          <path d="M14 20L22 13L30 20" fill="none" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
-          <rect x="18" y="24" width="8" height="9" rx="1.5" fill="#E85C2C"/>
-          <circle cx="7" cy="22" r="2" fill="#E85C2C"/>
-          <circle cx="37" cy="22" r="2" fill="#E85C2C"/>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div style="display:flex;align-items:center;gap:10px">
+        <svg width="34" height="34" aria-hidden="true" viewBox="0 0 40 40" fill="none">
+          <circle cx="20" cy="20" r="19" stroke="#e8561f" stroke-width="1.5" opacity="0.5"/>
+          <circle cx="20" cy="20" r="13" fill="#0f1f3d"/>
+          <path d="M20 9L28 16V31H12V16Z" fill="none" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+          <path d="M12 17.5L20 11L28 17.5" fill="none" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+          <rect x="16.5" y="22" width="7" height="9" rx="1.5" fill="#e8561f"/>
         </svg>
-        <div class="logo-name">Solutions<span>404</span></div>
+        <span class="logo-text">Solutions<em>404</em></span>
       </div>
-      <p class="footer-desc t-en block">Your trusted directory for home improvement and business services in Greater Houston.</p>
-      <p class="footer-desc t-es block">Tu directorio de confianza para mejoras del hogar y servicios empresariales en Houston.</p>
+      <p class="t-en b">Your trusted directory for home improvement and business services in Greater Houston, TX.</p>
+      <p class="t-es b">Tu directorio de confianza para mejoras del hogar y servicios empresariales en Houston, TX.</p>
     </div>
     <div class="footer-col">
-      <h4><span class="t-en">Services</span><span class="t-es">Servicios</span></h4>
+      <h5><span class="t-en">Services</span><span class="t-es">Servicios</span></h5>
       <a href="#">Roofing / Techado</a>
       <a href="#">A/C &amp; HVAC</a>
       <a href="#">Water Purification</a>
       <a href="#">Marketing</a>
-      <a href="#">Software</a>
+      <a href="#">Software &amp; Automation</a>
     </div>
     <div class="footer-col">
-      <h4><span class="t-en">Company</span><span class="t-es">Empresa</span></h4>
+      <h5><span class="t-en">Company</span><span class="t-es">Empresa</span></h5>
       <a href="#"><span class="t-en">About Us</span><span class="t-es">Nosotros</span></a>
       <a href="#"><span class="t-en">Join as a Pro</span><span class="t-es">Únete como Pro</span></a>
-      <a href="#">Contact</a>
+      <a href="#" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact</a>
       <a href="#"><span class="t-en">Privacy Policy</span><span class="t-es">Privacidad</span></a>
     </div>
   </div>
   <div class="footer-bottom">
     <p>© 2025 Solutions404.com · Greater Houston, TX</p>
-    <div class="footer-badge">
-      <span class="t-en">Built for <span>Houston</span> families &amp; businesses</span>
-      <span class="t-es">Hecho para familias y negocios de <span>Houston</span></span>
-    </div>
+    <div class="footer-badge"><span class="t-en">Made with ♥ for <strong>Houston</strong> families &amp; businesses</span><span class="t-es">Hecho con ♥ para familias y negocios de <strong>Houston</strong></span></div>
   </div>
 </footer>
 
 <script>
-const translations = {
-  en: {
-    strip: ['Roofing','A/C & HVAC','Water Purification','Software Automation','Marketing Solutions','Home Improvement'],
-    services: ['Select a service…','Roofing','A/C & HVAC','Water Filtration','Marketing Solutions','Software & Automation','Join as a Contractor','Other'],
-    namePH:'John',lastPH:'Smith',msgPH:'Describe your project briefly…'
+/* ── TRANSLATIONS ── */
+const TR = {
+  en:{
+    ticker:['Roofing','A/C & HVAC','Water Purification','Software Automation','Marketing Solutions','Home Improvement','Licensed Pros','Houston TX'],
+    svcs:['Select a service…','Roofing','A/C & HVAC','Water Filtration & Purification','Marketing Solutions','Software & Automation','Join as a Contractor','Other'],
+    fn:'John',ln:'Smith',msg:'Describe your project briefly…'
   },
-  es: {
-    strip: ['Techado','Aire Acondicionado','Purificación de Agua','Automatización','Mercadotecnia','Mejoras del Hogar'],
-    services: ['Selecciona un servicio…','Techado','Aire Acondicionado / A/C','Filtración de Agua','Soluciones de Marketing','Software y Automatización','Unirme como Contratista','Otro'],
-    namePH:'Juan',lastPH:'García',msgPH:'Describe brevemente tu proyecto…'
+  es:{
+    ticker:['Techado','Aire Acondicionado','Purificación de Agua','Automatización','Mercadotecnia','Mejoras del Hogar','Profesionales Licenciados','Houston TX'],
+    svcs:['Selecciona un servicio…','Techado','Aire Acondicionado / A/C','Filtración y Purificación de Agua','Soluciones de Marketing','Software y Automatización','Unirme como Contratista','Otro'],
+    fn:'Juan',ln:'García',msg:'Describe brevemente tu proyecto…'
   }
 };
 
-function buildStrip(lang){
-  const items=[...translations[lang].strip,...translations[lang].strip];
-  document.getElementById('strip-content').innerHTML=items.map(t=>
-    `<span class="strip-item">${t}<span class="strip-dot"></span></span>`
-  ).join('');
+function buildTicker(l){
+  const items=[...TR[l].ticker,...TR[l].ticker,...TR[l].ticker];
+  document.getElementById('ticker-track').innerHTML=
+    items.map(t=>`<span class="ticker-item">${t}</span>`).join('');
+}
+function buildSvcs(l){
+  document.getElementById('svc-sel').innerHTML=
+    TR[l].svcs.map((s,i)=>`<option value="${s}">${s}</option>`).join('');
+}
+function updatePH(l){
+  document.getElementById('ph-fn').placeholder=TR[l].fn;
+  document.getElementById('ph-ln').placeholder=TR[l].ln;
+  document.getElementById('ph-msg').placeholder=TR[l].msg;
+}
+function setLang(l){
+  document.body.className='lang-'+l;
+  document.getElementById('btn-en').classList.toggle('on',l==='en');
+  document.getElementById('btn-es').classList.toggle('on',l==='es');
+  buildTicker(l);buildSvcs(l);updatePH(l);
 }
 
-function buildSelect(lang){
-  const sel=document.getElementById('service-select');
-  sel.innerHTML=translations[lang].services.map((s,i)=>
-    `<option value="${i}">${s}</option>`
-  ).join('');
+/* ── CAROUSEL ── */
+const track=document.getElementById('car-track');
+const dotsWrap=document.getElementById('car-dots');
+let cur=0;
+
+function getVisible(){
+  const w=track.parentElement.offsetWidth;
+  if(w<600)return 1;
+  if(w<900)return 2;
+  return 3;
 }
 
-function updatePlaceholders(lang){
-  const t=translations[lang];
-  document.getElementById('ph-first').placeholder=t.namePH;
-  document.getElementById('ph-last').placeholder=t.lastPH;
-  document.getElementById('ph-msg').placeholder=t.msgPH;
+const cards=track.querySelectorAll('.c-card');
+const total=cards.length;
+
+function buildDots(){
+  const vis=getVisible();
+  const pages=total-vis+1;
+  dotsWrap.innerHTML='';
+  for(let i=0;i<pages;i++){
+    const d=document.createElement('span');
+    d.className='dot'+(i===cur?' on':'');
+    d.onclick=()=>goTo(i);
+    dotsWrap.appendChild(d);
+  }
 }
 
-function setLang(lang){
-  document.body.className='lang-'+lang;
-  document.getElementById('btn-en').classList.toggle('active',lang==='en');
-  document.getElementById('btn-es').classList.toggle('active',lang==='es');
-  buildStrip(lang);
-  buildSelect(lang);
-  updatePlaceholders(lang);
+function goTo(i){
+  const vis=getVisible();
+  const max=total-vis;
+  cur=Math.max(0,Math.min(i,max));
+  const cardW=cards[0].offsetWidth+24;
+  track.style.transform=`translateX(-${cur*cardW}px)`;
+  buildDots();
+  document.getElementById('car-prev').disabled=cur===0;
+  document.getElementById('car-next').disabled=cur>=max;
 }
 
-setLang('en');
+function carMove(dir){goTo(cur+dir)}
+
+window.addEventListener('resize',()=>goTo(Math.min(cur,total-getVisible())));
+
+/* ── FORM SUBMISSION LOGIC (GOOGLE WORKSPACE) ── */
+const form = document.getElementById('contactForm');
+const submitBtn = document.getElementById('submitBtn');
+const btnText = submitBtn.querySelector('.btn-text');
+
+// ⚠️ IMPORTANT: PASTE YOUR GOOGLE SCRIPT WEB APP URL HERE:
+const GOOGLE_SCRIPT_URL = "YOUR_WEB_APP_URL_HERE";
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault(); 
+  
+  const currentLang = document.body.classList.contains('lang-en') ? 'en' : 'es';
+  submitBtn.disabled = true;
+  submitBtn.style.opacity = '0.7';
+  btnText.innerHTML = currentLang === 'en' ? 'Sending...' : 'Enviando...';
+
+  const formData = new FormData(form);
+
+  fetch(GOOGLE_SCRIPT_URL, {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => response.json())
+  .then(data => {
+    if(data.result === "success") {
+      submitBtn.style.background = "var(--teal)";
+      submitBtn.style.boxShadow = "none";
+      btnText.innerHTML = currentLang === 'en' ? '✅ Message Sent!' : '✅ ¡Mensaje Enviado!';
+      form.reset(); 
+      
+      setTimeout(() => {
+        submitBtn.disabled = false;
+        submitBtn.style.background = ""; 
+        submitBtn.style.opacity = '1';
+        btnText.innerHTML = currentLang === 'en' ? '<span class="t-en b">Send Request →</span>' : '<span class="t-es b">Enviar Solicitud →</span>';
+      }, 4000);
+    } else {
+      throw new Error("Script returned error");
+    }
+  })
+  .catch(error => {
+    submitBtn.disabled = false;
+    submitBtn.style.opacity = '1';
+    btnText.innerHTML = currentLang === 'en' ? 'Error. Try Again.' : 'Error. Intenta de nuevo.';
+  });
+});
+
+/* ── INIT ── */
+document.addEventListener('DOMContentLoaded', () => {
+    setLang('en');
+    setTimeout(()=>{buildDots();goTo(0)},100);
+});
 </script>
 </body>
 </html>
