@@ -1,37 +1,25 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Solutions 404 | Trusted Home & Business Contractors in Houston, TX</title>
+<title>Solutions 404 | Professional Home & Business Services in Houston, TX</title>
 <meta name="description" content="Find vetted, licensed professionals for roofing, A/C, water purification, marketing, and software automation in Greater Houston, TX. Get a free quote today.">
 <meta name="keywords" content="Houston contractors, roofing Houston, AC repair Houston, water purification TX, trusted local businesses, home improvement directory">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://solutions404.com/">
 
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://solutions404.com/">
-<meta property="og:title" content="Solutions 404 | Trusted Contractors in Houston, TX">
-<meta property="og:description" content="Connect with top-rated, vetted professionals for your home and business needs in Greater Houston.">
-<meta property="og:image" content="https://solutions404.com/assets/social-share-image.jpg"> <meta property="og:site_name" content="Solutions 404">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Solutions 404 | Trusted Contractors in Houston, TX">
-<meta name="twitter:description" content="Connect with top-rated, vetted professionals for your home and business needs in Greater Houston.">
-<meta name="twitter:image" content="https://solutions404.com/assets/social-share-image.jpg">
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Solutions 404",
-  "image": "https://solutions404.com/assets/logo.png",
-  "@id": "https://solutions404.com/",
   "url": "https://solutions404.com/",
   "telephone": "+17130000000",
   "email": "helpdesk@solutions404.com",
@@ -44,593 +32,469 @@
     "postalCode": "77002",
     "addressCountry": "US"
   },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 29.7604,
-    "longitude": -95.3698
-  },
-  "areaServed": "Houston",
-  "sameAs": [
-    "https://www.facebook.com/solutions404",
-    "https://www.instagram.com/solutions404"
-  ]
+  "areaServed": "Houston"
 }
 </script>
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-:root{
-  --navy:#0a1628;
-  --navy2:#0f1f3d;
-  --accent:#e8561f;
-  --accent2:#f5a623;
-  --teal:#00b894;
-  --light:#f8f6f2;
-  --white:#ffffff;
-  --text:#1a1a2e;
-  --muted:#6b7280;
-  --border:#e5e0d8;
-  --card:#ffffff;
-  --r:14px;
+/* ── BASE & RESET ── */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --nav-bg: #ffffff;
+  --bg-main: #ffffff;
+  --bg-light: #f8fafc;
+  --primary-dark: #0f172a; /* Sophisticated Slate Navy */
+  --primary: #1e293b;
+  --accent: #ea580c; /* Sharp Corporate Orange */
+  --accent-hover: #c2410c;
+  --text-dark: #0f172a;
+  --text-main: #334155;
+  --text-muted: #64748b;
+  --border: #e2e8f0;
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
 }
 
-html{scroll-behavior:smooth}
-body{font-family:'Inter',sans-serif;background:var(--white);color:var(--text);overflow-x:hidden}
+/* ── LANGUAGE TOGGLE SYSTEM ── */
+.t-en, .t-es { display: none !important; }
+body.lang-en .t-en { display: inline !important; }
+body.lang-es .t-es { display: inline !important; }
+body.lang-en .t-en.b { display: block !important; }
+body.lang-es .t-es.b { display: block !important; }
+body.lang-en .t-en.f { display: flex !important; }
+body.lang-es .t-es.f { display: flex !important; }
 
-/* LANG */
-.t-en,.t-es{display:none!important}
-body.lang-en .t-en{display:inline!important}
-body.lang-es .t-es{display:inline!important}
-body.lang-en .t-en.b{display:block!important}
-body.lang-es .t-es.b{display:block!important}
-body.lang-en .t-en.f{display:flex!important}
-body.lang-es .t-es.f{display:flex!important}
+/* ── UTILITIES ── */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 5%; }
+.section { padding: 96px 0; }
+.bg-light { background-color: var(--bg-light); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.text-center { text-align: center; }
 
-/* ── NAV ── */
-nav{
-  background:rgba(10,22,40,0.96);
-  backdrop-filter:blur(20px);
-  padding:0 6%;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  height:70px;
-  position:fixed;
-  top:0;width:100%;
-  z-index:1000;
-  border-bottom:1px solid rgba(255,255,255,0.06);
+/* ── BUTTONS ── */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 12px 28px; border-radius: 6px; font-weight: 600; font-size: 15px;
+  cursor: pointer; transition: all 0.2s ease; border: none; text-decoration: none;
 }
-.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
-.logo-mark{width:40px;height:40px}
-.logo-text{font-family:'Syne',sans-serif;font-weight:800;font-size:19px;color:#fff;letter-spacing:-0.5px}
-.logo-text em{color:var(--accent);font-style:normal}
-.nav-links{display:flex;align-items:center;gap:6px}
-.lang-pill{display:flex;background:rgba(255,255,255,0.07);border-radius:20px;padding:3px}
-.lbtn{background:transparent;border:none;color:rgba(255,255,255,0.55);font-family:'Inter',sans-serif;font-size:12px;font-weight:600;padding:5px 13px;border-radius:16px;cursor:pointer;transition:all .2s;letter-spacing:0.5px}
-.lbtn.on{background:var(--accent);color:#fff}
-.nav-cta{background:var(--accent);color:#fff;border:none;font-family:'Inter',sans-serif;font-size:13px;font-weight:600;padding:9px 22px;border-radius:22px;cursor:pointer;margin-left:14px;transition:all .2s;letter-spacing:0.2px}
-.nav-cta:hover{background:#c94718;transform:translateY(-1px)}
+.btn-primary { background: var(--accent); color: white; }
+.btn-primary:hover { background: var(--accent-hover); transform: translateY(-1px); box-shadow: var(--shadow-md); }
+.btn-outline { background: transparent; color: white; border: 1px solid rgba(255,255,255,0.3); }
+.btn-outline:hover { background: rgba(255,255,255,0.1); border-color: white; }
 
-/* ── HERO ── */
-.hero{
-  min-height:100vh;
-  background:var(--navy);
-  display:flex;
-  align-items:center;
-  padding:120px 6% 80px;
-  position:relative;
-  overflow:hidden;
+/* ── HEADER & NAV ── */
+header {
+  position: fixed; top: 0; width: 100%; z-index: 1000;
+  background: var(--nav-bg); border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
 }
-.hero-bg{
-  position:absolute;inset:0;
-  background:
-    radial-gradient(ellipse 60% 50% at 80% 30%, rgba(232,86,31,0.12) 0%, transparent 60%),
-    radial-gradient(ellipse 40% 40% at 20% 70%, rgba(0,184,148,0.08) 0%, transparent 55%),
-    radial-gradient(ellipse 80% 60% at 50% 50%, rgba(15,31,61,0.8) 0%, transparent 100%);
-  pointer-events:none;
+.nav-container { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+.logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--primary-dark); }
+.logo svg { width: 32px; height: 32px; }
+.logo-text { font-size: 20px; font-weight: 700; letter-spacing: -0.5px; }
+.logo-text span { color: var(--accent); }
+.nav-controls { display: flex; align-items: center; gap: 16px; }
+.lang-switch { display: flex; background: var(--bg-light); border: 1px solid var(--border); border-radius: 6px; padding: 2px; }
+.lang-btn {
+  background: transparent; border: none; padding: 6px 12px; font-size: 12px; font-weight: 600;
+  color: var(--text-muted); cursor: pointer; border-radius: 4px; transition: 0.2s;
 }
-.hero-grid{
-  position:absolute;inset:0;
-  background-image:linear-gradient(rgba(255,255,255,0.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.02) 1px,transparent 1px);
-  background-size:60px 60px;
-  pointer-events:none;
-}
-.hero-content{position:relative;z-index:1;max-width:700px}
-.hero-badge{
-  display:inline-flex;align-items:center;gap:8px;
-  background:rgba(232,86,31,0.12);
-  border:1px solid rgba(232,86,31,0.25);
-  color:var(--accent2);
-  font-size:11px;font-weight:600;
-  padding:7px 16px;border-radius:20px;
-  margin-bottom:32px;
-  letter-spacing:1px;text-transform:uppercase;
-}
-.pulse{width:7px;height:7px;background:var(--accent);border-radius:50%;animation:pulse 2s infinite}
-@keyframes pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.4);opacity:.6}}
+.lang-btn.active { background: white; color: var(--primary-dark); box-shadow: var(--shadow-sm); }
 
-h1{
-  font-family:'Syne',sans-serif;
-  font-weight:800;
-  font-size:clamp(2.6rem,5.5vw,4.2rem);
-  color:#fff;
-  line-height:1.05;
-  letter-spacing:-2px;
-  margin-bottom:24px;
+/* ── HERO SECTION ── */
+.hero {
+  background-color: var(--primary-dark); color: white;
+  padding: 160px 0 100px; position: relative; overflow: hidden;
 }
-h1 .acc{
-  background:linear-gradient(135deg,var(--accent),var(--accent2));
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
-  background-clip:text;
+.hero::before {
+  content: ""; position: absolute; top: 0; right: 0; width: 50%; height: 100%;
+  background: linear-gradient(135deg, rgba(255,255,255,0.03) 0%, transparent 100%); pointer-events: none;
 }
-.hero-p{color:rgba(255,255,255,0.6);font-size:18px;line-height:1.7;max-width:500px;margin-bottom:44px;font-weight:300}
-.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:70px}
-.btn-a{
-  background:linear-gradient(135deg,var(--accent),#c94718);
-  color:#fff;border:none;
-  font-family:'Inter',sans-serif;font-size:15px;font-weight:600;
-  padding:15px 34px;border-radius:30px;cursor:pointer;
-  transition:all .25s;
-  box-shadow:0 8px 24px rgba(232,86,31,0.35);
+.hero-content { max-width: 700px; position: relative; z-index: 2; }
+.hero-tag {
+  display: inline-block; color: var(--accent); font-size: 13px; font-weight: 700;
+  letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 16px;
 }
-.btn-a:hover{transform:translateY(-3px);box-shadow:0 14px 32px rgba(232,86,31,0.45)}
-.btn-b{
-  background:rgba(255,255,255,0.07);
-  color:rgba(255,255,255,0.85);
-  border:1px solid rgba(255,255,255,0.15);
-  font-family:'Inter',sans-serif;font-size:15px;font-weight:500;
-  padding:15px 34px;border-radius:30px;cursor:pointer;
-  transition:all .25s;backdrop-filter:blur(10px);
-}
-.btn-b:hover{background:rgba(255,255,255,0.12);border-color:rgba(255,255,255,0.3)}
-.hero-stats{display:flex;gap:48px;flex-wrap:wrap}
-.hstat{display:flex;flex-direction:column;gap:3px}
-.hstat-n{font-family:'Syne',sans-serif;font-size:2rem;font-weight:800;color:#fff}
-.hstat-n em{color:var(--accent);font-style:normal}
-.hstat-l{font-size:12px;color:rgba(255,255,255,0.4);letter-spacing:0.5px;text-transform:uppercase}
-.hero-divider{width:1px;height:48px;background:rgba(255,255,255,0.1);align-self:center}
+.hero h1 { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 700; line-height: 1.1; letter-spacing: -1px; margin-bottom: 24px; color: white; }
+.hero p { font-size: 18px; color: #94a3b8; margin-bottom: 40px; font-weight: 400; max-width: 540px; }
+.hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
 
-/* ── TICKER ── */
-.ticker{background:var(--accent);padding:13px 0;overflow:hidden;white-space:nowrap}
-.ticker-track{display:inline-flex;gap:0;animation:tick 18s linear infinite}
-@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-.ticker-item{display:inline-flex;align-items:center;padding:0 32px;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#fff}
-.ticker-item::after{content:'✦';margin-left:32px;opacity:0.5;font-size:8px}
+/* ── TRUST BAR ── */
+.trust-bar { background: var(--primary); padding: 24px 0; border-top: 1px solid rgba(255,255,255,0.05); }
+.trust-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.trust-item { display: flex; align-items: center; gap: 12px; color: #cbd5e1; font-size: 14px; font-weight: 500; }
+.trust-item svg { width: 24px; height: 24px; color: var(--accent); flex-shrink: 0; }
 
-/* ── SECTION BASE ── */
-.sec{padding:100px 6%}
-.sec-light{background:var(--light)}
-.sec-white{background:#fff}
-.label{font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
-h2{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(2rem,3.5vw,3rem);line-height:1.1;letter-spacing:-1px;margin-bottom:18px;color:var(--text)}
-.sub{color:var(--muted);font-size:17px;line-height:1.7;max-width:560px;margin-bottom:56px;font-weight:300}
+/* ── SECTION HEADERS ── */
+.sec-title { font-size: 2.25rem; font-weight: 700; color: var(--text-dark); letter-spacing: -0.5px; margin-bottom: 16px; }
+.sec-desc { font-size: 1.125rem; color: var(--text-muted); max-width: 600px; margin-bottom: 48px; }
 
-/* ── CAROUSEL ── */
-.carousel-wrap{position:relative}
-.carousel-viewport{overflow:hidden;border-radius:20px}
-.carousel-track{display:flex;gap:24px;transition:transform .5s cubic-bezier(.4,0,.2,1);will-change:transform}
-.c-card{
-  min-width:calc(33.333% - 16px);
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:20px;
-  padding:36px 32px;
-  position:relative;
-  overflow:hidden;
-  transition:all .3s;
-  cursor:pointer;
-  flex-shrink:0;
+/* ── SERVICES GRID ── */
+.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px; }
+.service-card {
+  background: white; border: 1px solid var(--border); border-radius: 8px; padding: 40px 32px;
+  transition: all 0.3s ease; display: flex; flex-direction: column; height: 100%;
 }
-.c-card::after{
-  content:'';
-  position:absolute;
-  top:0;left:0;right:0;
-  height:3px;
-  background:linear-gradient(90deg,var(--accent),var(--accent2));
-  opacity:0;
-  transition:opacity .3s;
+.service-card:hover { border-color: var(--accent); box-shadow: var(--shadow-lg); transform: translateY(-4px); }
+.sc-icon {
+  width: 48px; height: 48px; background: var(--bg-light); border-radius: 8px;
+  display: flex; align-items: center; justify-content: center; margin-bottom: 24px; color: var(--primary-dark);
 }
-.c-card:hover{transform:translateY(-6px);box-shadow:0 20px 48px rgba(0,0,0,0.1);border-color:rgba(232,86,31,0.2)}
-.c-card:hover::after{opacity:1}
-.c-icon{
-  width:56px;height:56px;border-radius:16px;
-  display:flex;align-items:center;justify-content:center;
-  font-size:26px;margin-bottom:22px;
-}
-.ic-o{background:linear-gradient(135deg,rgba(232,86,31,0.12),rgba(232,86,31,0.06))}
-.ic-t{background:linear-gradient(135deg,rgba(0,184,148,0.12),rgba(0,184,148,0.06))}
-.ic-b{background:linear-gradient(135deg,rgba(59,130,246,0.12),rgba(59,130,246,0.06))}
-.ic-a{background:linear-gradient(135deg,rgba(245,166,35,0.12),rgba(245,166,35,0.06))}
-.ic-p{background:linear-gradient(135deg,rgba(139,92,246,0.12),rgba(139,92,246,0.06))}
-.ic-g{background:linear-gradient(135deg,rgba(16,185,129,0.12),rgba(16,185,129,0.06))}
-.c-tag{
-  display:inline-block;font-size:10px;font-weight:700;
-  padding:4px 11px;border-radius:10px;margin-bottom:16px;
-  letter-spacing:0.8px;text-transform:uppercase;
-}
-.tag-core{background:rgba(232,86,31,0.1);color:var(--accent)}
-.tag-grow{background:rgba(0,184,148,0.1);color:var(--teal)}
-.tag-plus{background:rgba(245,166,35,0.1);color:#b07d00}
-.tag-soon{background:rgba(99,102,241,0.1);color:#6366f1}
-.c-title{font-family:'Syne',sans-serif;font-size:18px;font-weight:800;margin-bottom:10px;color:var(--text)}
-.c-desc{font-size:14px;color:var(--muted);line-height:1.65;font-weight:300}
-.c-arrow{
-  position:absolute;bottom:24px;right:24px;
-  width:32px;height:32px;border-radius:50%;
-  background:var(--light);
-  display:flex;align-items:center;justify-content:center;
-  font-size:14px;transition:all .3s;
-  color:var(--accent);
-}
-.c-card:hover .c-arrow{background:var(--accent);color:#fff;transform:translateX(3px)}
-
-/* carousel nav */
-.car-nav{display:flex;align-items:center;justify-content:space-between;margin-top:36px}
-.car-dots{display:flex;gap:8px}
-.dot{width:8px;height:8px;border-radius:4px;background:var(--border);transition:all .3s;cursor:pointer}
-.dot.on{width:24px;background:var(--accent)}
-.car-btns{display:flex;gap:10px}
-.cbtn{
-  width:44px;height:44px;border-radius:50%;
-  background:var(--white);border:1.5px solid var(--border);
-  display:flex;align-items:center;justify-content:center;
-  cursor:pointer;transition:all .2s;font-size:16px;color:var(--text);
-}
-.cbtn:hover{background:var(--accent);border-color:var(--accent);color:#fff}
-.cbtn:disabled{opacity:0.3;cursor:default}
-.cbtn:disabled:hover{background:var(--white);border-color:var(--border);color:var(--text)}
+.sc-icon svg { width: 24px; height: 24px; }
+.sc-title { font-size: 1.25rem; font-weight: 600; color: var(--text-dark); margin-bottom: 12px; }
+.sc-desc { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 24px; flex-grow: 1; }
+.sc-link { color: var(--accent); font-weight: 600; font-size: 14px; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; }
+.sc-link:hover { text-decoration: underline; }
 
 /* ── HOW IT WORKS ── */
-.steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;position:relative}
-.steps-grid::before{
-  content:'';position:absolute;
-  top:40px;left:calc(16.666% + 12px);right:calc(16.666% + 12px);
-  height:1px;
-  background:linear-gradient(90deg,transparent,var(--border),var(--border),transparent);
-  z-index:0;
+.process-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; position: relative; }
+.process-step { position: relative; z-index: 1; }
+.step-number {
+  width: 40px; height: 40px; background: var(--primary-dark); color: white; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px; margin-bottom: 20px;
 }
-.step-box{
-  background:#fff;border:1px solid var(--border);
-  border-radius:20px;padding:36px 28px;
-  text-align:center;position:relative;z-index:1;
-  transition:all .3s;
+.step-title { font-size: 1.125rem; font-weight: 600; color: var(--text-dark); margin-bottom: 8px; }
+.step-desc { color: var(--text-muted); font-size: 0.95rem; }
+@media (min-width: 768px) {
+  .process-grid::before {
+    content: ''; position: absolute; top: 20px; left: 40px; right: 40px; height: 2px;
+    background: var(--border); z-index: 0;
+  }
 }
-.step-box:hover{transform:translateY(-5px);box-shadow:0 16px 40px rgba(0,0,0,0.08)}
-.step-n{
-  width:80px;height:80px;border-radius:50%;
-  display:flex;align-items:center;justify-content:center;
-  font-family:'Syne',sans-serif;font-size:28px;font-weight:800;
-  margin:0 auto 24px;border:2px solid var(--border);
-  color:#fff;
-}
-.sn1{background:var(--navy)}
-.sn2{background:var(--accent)}
-.sn3{background:var(--teal)}
-.step-title{font-family:'Syne',sans-serif;font-size:17px;font-weight:800;margin-bottom:10px}
-.step-desc{font-size:14px;color:var(--muted);line-height:1.65;font-weight:300}
 
-/* ── TRUST BAND ── */
-.trust{
-  background:var(--navy);
-  padding:64px 6%;
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:2px;
-}
-.trust-item{
-  text-align:center;padding:32px 20px;
-  border-right:1px solid rgba(255,255,255,0.06);
-}
-.trust-item:last-child{border:none}
-.trust-n{font-family:'Syne',sans-serif;font-size:2.8rem;font-weight:800;color:#fff;line-height:1}
-.trust-n em{color:var(--accent);font-style:normal}
-.trust-l{font-size:12px;color:rgba(255,255,255,0.4);margin-top:8px;letter-spacing:0.5px;text-transform:uppercase}
+/* ── CONTACT SECTION ── */
+.contact-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+.contact-info { padding-right: 40px; }
+.contact-list { margin-top: 32px; display: flex; flex-direction: column; gap: 24px; }
+.c-item { display: flex; align-items: flex-start; gap: 16px; }
+.c-icon { width: 40px; height: 40px; background: white; border: 1px solid var(--border); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--accent); flex-shrink: 0; }
+.c-icon svg { width: 20px; height: 20px; }
+.c-text h4 { font-size: 14px; font-weight: 600; color: var(--text-dark); margin-bottom: 4px; }
+.c-text p { font-size: 14px; color: var(--text-muted); }
 
-/* ── CONTACT ── */
-.contact-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:72px;align-items:start}
-.contact-left h2{color:#fff}
-.contact-left .sub{color:rgba(255,255,255,0.5);margin-bottom:36px}
-.contact-detail{
-  display:flex;align-items:flex-start;gap:14px;
-  margin-bottom:20px;color:rgba(255,255,255,0.65);font-size:14px;line-height:1.5;
+/* Form Styles */
+.form-card { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 40px; box-shadow: var(--shadow-lg); }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form-group { margin-bottom: 20px; }
+.form-group label { display: block; font-size: 13px; font-weight: 600; color: var(--text-dark); margin-bottom: 8px; }
+.form-control {
+  width: 100%; padding: 12px 16px; border: 1px solid var(--border); border-radius: 6px;
+  font-family: 'Inter', sans-serif; font-size: 14px; color: var(--text-main);
+  transition: border-color 0.2s, box-shadow 0.2s; background: var(--bg-light);
 }
-.ci{
-  width:40px;height:40px;min-width:40px;
-  border-radius:10px;background:rgba(255,255,255,0.06);
-  display:flex;align-items:center;justify-content:center;font-size:17px;
-  border:1px solid rgba(255,255,255,0.08);
-}
-.form-box{
-  background:#fff;border-radius:20px;padding:40px;
-  box-shadow:0 32px 80px rgba(0,0,0,0.3);
-}
-.frow{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.fg{margin-bottom:18px}
-.fg label{display:block;font-size:12px;font-weight:600;color:var(--muted);margin-bottom:8px;letter-spacing:0.3px;text-transform:uppercase}
-.fg input,.fg select,.fg textarea{
-  width:100%;background:var(--light);
-  border:1.5px solid var(--border);
-  border-radius:10px;padding:12px 16px;
-  font-family:'Inter',sans-serif;font-size:14px;color:var(--text);
-  outline:none;transition:all .2s;font-weight:400;
-}
-.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--accent);background:#fff;box-shadow:0 0 0 3px rgba(232,86,31,0.08)}
-.fg textarea{resize:vertical;min-height:100px}
-.submit-btn{
-  width:100%;
-  background:linear-gradient(135deg,var(--accent),#c94718);
-  color:#fff;border:none;
-  font-family:'Inter',sans-serif;font-size:15px;font-weight:700;
-  padding:16px;border-radius:30px;cursor:pointer;
-  margin-top:8px;transition:all .25s;
-  box-shadow:0 8px 24px rgba(232,86,31,0.3);
-  letter-spacing:0.3px;
-}
-.submit-btn:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(232,86,31,0.4)}
+.form-control:focus { outline: none; border-color: var(--accent); background: white; box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.1); }
+textarea.form-control { min-height: 120px; resize: vertical; }
+.btn-submit { width: 100%; margin-top: 8px; }
 
 /* ── FOOTER ── */
-footer{background:#060e1c;padding:60px 6% 32px;border-top:1px solid rgba(255,255,255,0.04)}
-.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:60px;margin-bottom:48px}
-.footer-brand p{color:rgba(255,255,255,0.35);font-size:13px;line-height:1.7;margin-top:14px;font-weight:300;max-width:260px}
-.footer-col h5{font-family:'Syne',sans-serif;font-size:11px;font-weight:700;color:rgba(255,255,255,0.35);letter-spacing:2px;text-transform:uppercase;margin-bottom:18px}
-.footer-col a{display:block;color:rgba(255,255,255,0.55);font-size:13px;margin-bottom:10px;text-decoration:none;transition:color .2s;font-weight:300}
-.footer-col a:hover{color:var(--accent)}
-.footer-bottom{border-top:1px solid rgba(255,255,255,0.05);padding-top:28px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
-.footer-bottom p{color:rgba(255,255,255,0.2);font-size:12px}
-.footer-badge{color:rgba(255,255,255,0.2);font-size:12px}
-.footer-badge strong{color:var(--accent)}
+footer { background: var(--primary-dark); color: #94a3b8; padding: 64px 0 32px; border-top: 1px solid #1e293b; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+.footer-logo { display: flex; align-items: center; gap: 10px; color: white; font-size: 20px; font-weight: 700; margin-bottom: 16px; }
+.footer-logo svg { width: 28px; height: 28px; }
+.footer-logo span { color: var(--accent); }
+.footer-col h5 { color: white; font-size: 14px; font-weight: 600; margin-bottom: 20px; }
+.footer-links { list-style: none; }
+.footer-links li { margin-bottom: 12px; }
+.footer-links a { color: #94a3b8; text-decoration: none; font-size: 14px; transition: color 0.2s; }
+.footer-links a:hover { color: white; }
+.footer-bottom { border-top: 1px solid #1e293b; padding-top: 24px; display: flex; justify-content: space-between; align-items: center; font-size: 13px; }
 
 /* ── RESPONSIVE ── */
-@media(max-width:900px){
-  .c-card{min-width:calc(50% - 12px)}
-  .steps-grid{grid-template-columns:1fr}
-  .steps-grid::before{display:none}
-  .trust{grid-template-columns:1fr 1fr}
-  .trust-item{border-bottom:1px solid rgba(255,255,255,0.06)}
-  .contact-grid{grid-template-columns:1fr}
-  .footer-grid{grid-template-columns:1fr 1fr}
+@media (max-width: 992px) {
+  .contact-layout { grid-template-columns: 1fr; gap: 40px; }
+  .contact-info { padding-right: 0; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
 }
-@media(max-width:600px){
-  .c-card{min-width:calc(100% - 0px)}
-  .hero-stats{gap:24px}
-  .frow{grid-template-columns:1fr}
-  .footer-grid{grid-template-columns:1fr}
-  .trust{grid-template-columns:1fr 1fr}
-  h1{letter-spacing:-1px}
-  nav{padding:0 4%}
-  .sec{padding:70px 4%}
-  .hero{padding:110px 4% 60px}
+@media (max-width: 768px) {
+  .trust-grid { grid-template-columns: 1fr 1fr; }
+  .process-grid { grid-template-columns: 1fr; gap: 32px; }
+  .form-row { grid-template-columns: 1fr; }
+}
+@media (max-width: 576px) {
+  .hero { padding: 120px 0 60px; }
+  .nav-controls .btn { display: none; }
+  .trust-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+  .form-card { padding: 24px; }
 }
 </style>
 </head>
 <body class="lang-en">
 
-<nav>
-  <a class="logo" href="#">
-    <svg class="logo-mark" aria-hidden="true" viewBox="0 0 40 40" fill="none">
-      <circle cx="20" cy="20" r="19" stroke="#e8561f" stroke-width="1.5" opacity="0.5"/>
-      <circle cx="20" cy="20" r="13" fill="#0f1f3d"/>
-      <path d="M20 9L28 16V31H12V16Z" fill="none" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
-      <path d="M12 17.5L20 11L28 17.5" fill="none" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
-      <rect x="16.5" y="22" width="7" height="9" rx="1.5" fill="#e8561f"/>
-      <circle cx="5" cy="20" r="2" fill="#e8561f"/>
-      <circle cx="35" cy="20" r="2" fill="#e8561f"/>
-    </svg>
-    <span class="logo-text">Solutions<em>404</em></span>
-  </a>
-  <div class="nav-links">
-    <div class="lang-pill">
-      <button class="lbtn on" id="btn-en" aria-label="Switch to English" onclick="setLang('en')">EN</button>
-      <button class="lbtn" id="btn-es" aria-label="Switch to Spanish" onclick="setLang('es')">ES</button>
+<header>
+  <div class="container nav-container">
+    <a href="#" class="logo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+      <div class="logo-text">Solutions<span>404</span></div>
+    </a>
+    <div class="nav-controls">
+      <div class="lang-switch">
+        <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
+        <button class="lang-btn" id="btn-es" onclick="setLang('es')">ES</button>
+      </div>
+      <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView()">
+        <span class="t-en">Get a Quote</span>
+        <span class="t-es">Cotización</span>
+      </button>
     </div>
-    <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
-      <span class="t-en">Get a Quote</span>
-      <span class="t-es">Cotización</span>
-    </button>
   </div>
-</nav>
+</header>
 
 <main>
   <section class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-grid"></div>
-    <div class="hero-content">
-      <div class="hero-badge"><span class="pulse"></span><span class="t-en">Trusted Home &amp; Business Directory — Houston TX</span><span class="t-es">Directorio Confiable — Houston TX</span></div>
+    <div class="container hero-content">
+      <span class="hero-tag">
+        <span class="t-en">Houston's Premier Contractor Directory</span>
+        <span class="t-es">Directorio Principal de Contratistas en Houston</span>
+      </span>
       <h1>
-        <span class="t-en b">Your Home.<br><span class="acc">Fixed &amp; Upgraded.</span></span>
-        <span class="t-es b">Tu Hogar.<br><span class="acc">Resuelto y Mejorado.</span></span>
+        <span class="t-en b">Professional Services for Your Home & Business.</span>
+        <span class="t-es b">Servicios Profesionales para tu Hogar y Negocio.</span>
       </h1>
-      <p class="hero-p t-en b">Connecting Houston homeowners and businesses with trusted, vetted professionals in roofing, A/C, water purification and more.</p>
-      <p class="hero-p t-es b">Conectamos propietarios y negocios en Houston con profesionales verificados en techado, A/C, purificación de agua y más.</p>
+      <p>
+        <span class="t-en b">Connect instantly with fully licensed and thoroughly vetted experts in roofing, HVAC, water purification, and business automation.</span>
+        <span class="t-es b">Conecta al instante con expertos licenciados y verificados en techado, A/C, purificación de agua y automatización comercial.</span>
+      </p>
       <div class="hero-actions">
-        <button class="btn-a" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">
+        <button class="btn btn-primary" onclick="document.getElementById('services').scrollIntoView()">
           <span class="t-en">Explore Services</span><span class="t-es">Ver Servicios</span>
         </button>
-        <button class="btn-b" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
-          <span class="t-en">Free Quote →</span><span class="t-es">Cotización Gratis →</span>
+        <button class="btn btn-outline" onclick="document.getElementById('contact').scrollIntoView()">
+          <span class="t-en">Request Free Quote</span><span class="t-es">Solicitar Cotización</span>
         </button>
       </div>
-      <div class="hero-stats">
-        <div class="hstat"><div class="hstat-n">200<em>+</em></div><div class="hstat-l"><span class="t-en">Vetted Pros</span><span class="t-es">Profesionales</span></div></div>
-        <div class="hero-divider"></div>
-        <div class="hstat"><div class="hstat-n">5<em>★</em></div><div class="hstat-l"><span class="t-en">Avg Rating</span><span class="t-es">Calificación</span></div></div>
-        <div class="hero-divider"></div>
-        <div class="hstat"><div class="hstat-n">24<em>h</em></div><div class="hstat-l"><span class="t-en">Response</span><span class="t-es">Respuesta</span></div></div>
-        <div class="hero-divider"></div>
-        <div class="hstat"><div class="hstat-n">TX<em>✓</em></div><div class="hstat-l"><span class="t-en">Licensed</span><span class="t-es">Licenciado</span></div></div>
-      </div>
     </div>
   </section>
 
-  <div class="ticker"><div class="ticker-track" id="ticker-track"></div></div>
-
-  <section class="sec sec-light" id="services">
-    <div class="label"><span class="t-en">Our Services</span><span class="t-es">Nuestros Servicios</span></div>
-    <h2><span class="t-en">Solutions for Every Need</span><span class="t-es">Soluciones para Cada Necesidad</span></h2>
-    <p class="sub t-en b">From urgent repairs to long-term improvements — one trusted directory for every job.</p>
-    <p class="sub t-es b">Desde reparaciones urgentes hasta mejoras a largo plazo — un directorio confiable para cada trabajo.</p>
-
-    <div class="carousel-wrap">
-      <div class="carousel-viewport">
-        <div class="carousel-track" id="car-track">
-
-          <div class="c-card">
-            <div class="c-icon ic-o">🏠</div>
-            <span class="c-tag tag-core"><span class="t-en">Core Service</span><span class="t-es">Servicio Principal</span></span>
-            <div class="c-title"><span class="t-en">Roofing</span><span class="t-es">Techado</span></div>
-            <p class="c-desc t-en b">Repairs, replacements, storm damage & inspections. Residential and commercial, fully licensed and insured.</p>
-            <p class="c-desc t-es b">Reparaciones, reemplazos, daños por tormenta e inspecciones. Residencial y comercial, licenciados y asegurados.</p>
-            <div class="c-arrow">→</div>
-          </div>
-
-          <div class="c-card">
-            <div class="c-icon ic-t">❄️</div>
-            <span class="c-tag tag-core"><span class="t-en">Core Service</span><span class="t-es">Servicio Principal</span></span>
-            <div class="c-title"><span class="t-en">A/C & HVAC</span><span class="t-es">Aire Acondicionado</span></div>
-            <p class="c-desc t-en b">Installation, tune-ups, emergency repairs and full system replacements. Beat every Houston summer.</p>
-            <p class="c-desc t-es b">Instalación, mantenimiento, emergencias y reemplazos completos. Ideal para los veranos de Houston.</p>
-            <div class="c-arrow">→</div>
-          </div>
-
-          <div class="c-card">
-            <div class="c-icon ic-b">💧</div>
-            <span class="c-tag tag-core"><span class="t-en">Core Service</span><span class="t-es">Servicio Principal</span></span>
-            <div class="c-title"><span class="t-en">Water Filtration</span><span class="t-es">Purificación de Agua</span></div>
-            <p class="c-desc t-en b">Whole-home systems, under-sink filters, water softeners & reverse osmosis. Clean water guaranteed.</p>
-            <p class="c-desc t-es b">Sistemas para todo el hogar, filtros bajo lavabo, suavizadores y ósmosis inversa. Agua limpia garantizada.</p>
-            <div class="c-arrow">→</div>
-          </div>
-
-          <div class="c-card">
-            <div class="c-icon ic-a">📈</div>
-            <span class="c-tag tag-grow"><span class="t-en">Growing</span><span class="t-es">En Crecimiento</span></span>
-            <div class="c-title"><span class="t-en">Marketing Solutions</span><span class="t-es">Soluciones de Marketing</span></div>
-            <p class="c-desc t-en b">Local SEO, paid ads, social media management and brand strategy for home service businesses ready to scale.</p>
-            <p class="c-desc t-es b">SEO local, anuncios pagados, redes sociales y estrategia de marca para negocios de servicios listos para crecer.</p>
-            <div class="c-arrow">→</div>
-          </div>
-
-          <div class="c-card">
-            <div class="c-icon ic-p">⚙️</div>
-            <span class="c-tag tag-plus"><span class="t-en">Add-on</span><span class="t-es">Adicional</span></span>
-            <div class="c-title"><span class="t-en">Software & Automation</span><span class="t-es">Software y Automatización</span></div>
-            <p class="c-desc t-en b">Custom workflows, CRM integrations, scheduling tools and web development tailored to service businesses.</p>
-            <p class="c-desc t-es b">Flujos de trabajo, integraciones CRM, herramientas de agenda y desarrollo web para negocios de servicios.</p>
-            <div class="c-arrow">→</div>
-          </div>
-
-          <div class="c-card" style="background:linear-gradient(135deg,var(--navy),#0f1f3d);border-color:rgba(232,86,31,0.2)">
-            <div class="c-icon" style="background:rgba(232,86,31,0.15)">➕</div>
-            <span class="c-tag tag-soon"><span class="t-en">Coming Soon</span><span class="t-es">Próximamente</span></span>
-            <div class="c-title" style="color:#fff"><span class="t-en">More Services</span><span class="t-es">Más Servicios</span></div>
-            <p class="c-desc t-en b" style="color:rgba(255,255,255,0.45)">Plumbing, electrical, landscaping & more. Are you a contractor? Join our growing network today.</p>
-            <p class="c-desc t-es b" style="color:rgba(255,255,255,0.45)">Plomería, electricidad, paisajismo y más. ¿Eres contratista? Únete a nuestra red en crecimiento.</p>
-            <div class="c-arrow" style="background:rgba(232,86,31,0.15);color:var(--accent)">→</div>
-          </div>
-
-        </div>
+  <div class="trust-bar">
+    <div class="container trust-grid">
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+        <span class="t-en">Vetted Professionals</span><span class="t-es">Profesionales Verificados</span>
       </div>
-
-      <div class="car-nav">
-        <div class="car-dots" id="car-dots"></div>
-        <div class="car-btns">
-          <button class="cbtn" id="car-prev" aria-label="Previous Service" onclick="carMove(-1)">←</button>
-          <button class="cbtn" id="car-next" aria-label="Next Service" onclick="carMove(1)">→</button>
-        </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        <span class="t-en">Licensed & Insured</span><span class="t-es">Licenciados y Asegurados</span>
       </div>
-    </div>
-  </section>
-
-  <section class="sec sec-white">
-    <div class="label"><span class="t-en">How It Works</span><span class="t-es">Cómo Funciona</span></div>
-    <h2><span class="t-en">Simple. Fast. Trusted.</span><span class="t-es">Simple. Rápido. Confiable.</span></h2>
-    <p class="sub t-en b">Getting matched with the right professional takes less than 2 minutes.</p>
-    <p class="sub t-es b">Conectarte con el profesional correcto toma menos de 2 minutos.</p>
-    <div class="steps-grid">
-      <div class="step-box">
-        <div class="step-n sn1">1</div>
-        <div class="step-title"><span class="t-en">Tell Us Your Need</span><span class="t-es">Cuéntanos Tu Necesidad</span></div>
-        <p class="step-desc t-en b">Choose a service category and briefly describe your project. Zero commitment required.</p>
-        <p class="step-desc t-es b">Elige una categoría y describe tu proyecto brevemente. Sin ningún compromiso.</p>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+        <span class="t-en">Fast Response Times</span><span class="t-es">Respuesta Rápida</span>
       </div>
-      <div class="step-box">
-        <div class="step-n sn2">2</div>
-        <div class="step-title"><span class="t-en">We Match You</span><span class="t-es">Te Conectamos</span></div>
-        <p class="step-desc t-en b">Our directory instantly connects you with vetted, licensed pros in your area.</p>
-        <p class="step-desc t-es b">Nuestro directorio te conecta al instante con profesionales verificados y licenciados en tu área.</p>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+        <span class="t-en">Greater Houston Area</span><span class="t-es">Área de Houston, TX</span>
       </div>
-      <div class="step-box">
-        <div class="step-n sn3">3</div>
-        <div class="step-title"><span class="t-en">Get It Done</span><span class="t-es">Haz Que Suceda</span></div>
-        <p class="step-desc t-en b">Compare quotes, hire your pro and leave a review to help your community.</p>
-        <p class="step-desc t-es b">Compara cotizaciones, contrata a tu profesional y deja una reseña para ayudar a tu comunidad.</p>
-      </div>
-    </div>
-  </section>
-
-  <div class="trust">
-    <div class="trust-item">
-      <div class="trust-n">200<em>+</em></div>
-      <div class="trust-l"><span class="t-en">Vetted Professionals</span><span class="t-es">Profesionales Verificados</span></div>
-    </div>
-    <div class="trust-item">
-      <div class="trust-n">5<em>★</em></div>
-      <div class="trust-l"><span class="t-en">Average Rating</span><span class="t-es">Calificación Promedio</span></div>
-    </div>
-    <div class="trust-item">
-      <div class="trust-n">24<em>h</em></div>
-      <div class="trust-l"><span class="t-en">Response Time</span><span class="t-es">Tiempo de Respuesta</span></div>
-    </div>
-    <div class="trust-item" style="border:none">
-      <div class="trust-n">100<em>%</em></div>
-      <div class="trust-l"><span class="t-en">Licensed & Insured</span><span class="t-es">Licenciados y Asegurados</span></div>
     </div>
   </div>
 
-  <section class="sec" id="contact" style="background:var(--navy)">
-    <div class="contact-grid">
-      <div class="contact-left">
-        <div class="label" style="color:var(--accent2)"><span class="t-en">Contact Us</span><span class="t-es">Contáctanos</span></div>
-        <h2><span class="t-en">Let's Start Your Project</span><span class="t-es">Empecemos Tu Proyecto</span></h2>
-        <p class="sub t-en b">Need a repair, an upgrade, or want to join as a contractor? We'd love to hear from you.</p>
-        <p class="sub t-es b">¿Necesitas una reparación, mejora o quieres unirte como contratista? Nos encantaría saber de ti.</p>
-        <div class="contact-detail"><div class="ci">📍</div><div><strong style="color:#fff;display:block">Location</strong>Greater Houston, TX &amp; Surrounding Areas</div></div>
-        <div class="contact-detail"><div class="ci">🌐</div><div><strong style="color:#fff;display:block">Website</strong>solutions404.com</div></div>
-        <div class="contact-detail"><div class="ci">⏱</div><div><strong style="color:#fff;display:block"><span class="t-en">Response Time</span><span class="t-es">Tiempo de Respuesta</span></strong><span class="t-en">Within 24 hours</span><span class="t-es">En 24 horas</span></div></div>
+  <section class="section bg-light" id="services">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="sec-title">
+          <span class="t-en">Core Services</span><span class="t-es">Servicios Principales</span>
+        </h2>
+        <p class="sec-desc" style="margin: 0 auto 48px;">
+          <span class="t-en b">Comprehensive solutions for property management and business growth, delivered by industry experts.</span>
+          <span class="t-es b">Soluciones integrales para la gestión de propiedades y el crecimiento empresarial.</span>
+        </p>
       </div>
-      <div>
-        <form id="contactForm" class="form-box">
-          <div class="frow">
-            <div class="fg">
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="sc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+          </div>
+          <h3 class="sc-title"><span class="t-en">Roofing Solutions</span><span class="t-es">Soluciones de Techado</span></h3>
+          <p class="sc-desc">
+            <span class="t-en b">Commercial and residential roof inspections, repairs, and complete system replacements. Fully compliant with Texas building codes.</span>
+            <span class="t-es b">Inspecciones, reparaciones y reemplazos completos de techos comerciales y residenciales. Cumple con los códigos de construcción de Texas.</span>
+          </p>
+          <a href="#contact" class="sc-link">
+            <span class="t-en">Get an Estimate</span><span class="t-es">Obtener Estimado</span> →
+          </a>
+        </div>
+
+        <div class="service-card">
+          <div class="sc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+          </div>
+          <h3 class="sc-title"><span class="t-en">HVAC & A/C Systems</span><span class="t-es">Sistemas de Aire Acondicionado</span></h3>
+          <p class="sc-desc">
+            <span class="t-en b">Professional installation, seasonal maintenance, and emergency repair services to maintain optimal climate control year-round.</span>
+            <span class="t-es b">Instalación profesional, mantenimiento de temporada y servicios de reparación de emergencia.</span>
+          </p>
+          <a href="#contact" class="sc-link">
+            <span class="t-en">Get an Estimate</span><span class="t-es">Obtener Estimado</span> →
+          </a>
+        </div>
+
+        <div class="service-card">
+          <div class="sc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+          </div>
+          <h3 class="sc-title"><span class="t-en">Water Purification</span><span class="t-es">Purificación de Agua</span></h3>
+          <p class="sc-desc">
+            <span class="t-en b">Whole-home filtration systems, reverse osmosis, and water softening solutions for safe, clean, and great-tasting water.</span>
+            <span class="t-es b">Sistemas de filtración para todo el hogar, ósmosis inversa y soluciones de ablandamiento de agua.</span>
+          </p>
+          <a href="#contact" class="sc-link">
+            <span class="t-en">Get an Estimate</span><span class="t-es">Obtener Estimado</span> →
+          </a>
+        </div>
+
+        <div class="service-card">
+          <div class="sc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+          </div>
+          <h3 class="sc-title"><span class="t-en">Digital Marketing</span><span class="t-es">Marketing Digital</span></h3>
+          <p class="sc-desc">
+            <span class="t-en b">Targeted local SEO, lead generation campaigns, and brand strategy to help local service businesses scale efficiently.</span>
+            <span class="t-es b">SEO local, campañas de generación de prospectos y estrategia de marca para ayudar a escalar negocios locales.</span>
+          </p>
+          <a href="#contact" class="sc-link">
+            <span class="t-en">Consult an Expert</span><span class="t-es">Consultar Experto</span> →
+          </a>
+        </div>
+
+        <div class="service-card">
+          <div class="sc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+          </div>
+          <h3 class="sc-title"><span class="t-en">Software Automation</span><span class="t-es">Automatización de Software</span></h3>
+          <p class="sc-desc">
+            <span class="t-en b">Custom CRM integrations, dispatch scheduling, and automated workflows designed specifically for contractors.</span>
+            <span class="t-es b">Integraciones CRM, programación de despachos y flujos de trabajo automatizados diseñados para contratistas.</span>
+          </p>
+          <a href="#contact" class="sc-link">
+            <span class="t-en">Consult an Expert</span><span class="t-es">Consultar Experto</span> →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="sec-title">
+          <span class="t-en">Our Process</span><span class="t-es">Nuestro Proceso</span>
+        </h2>
+        <p class="sec-desc" style="margin: 0 auto 64px;">
+          <span class="t-en b">A streamlined approach to solving your business and property needs.</span>
+          <span class="t-es b">Un enfoque simplificado para resolver las necesidades de tu propiedad.</span>
+        </p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-step">
+          <div class="step-number">1</div>
+          <h4 class="step-title"><span class="t-en">Submit Request</span><span class="t-es">Envía tu Solicitud</span></h4>
+          <p class="step-desc">
+            <span class="t-en b">Provide project details through our secure form. It takes less than two minutes.</span>
+            <span class="t-es b">Proporciona los detalles de tu proyecto en nuestro formulario seguro. Toma menos de dos minutos.</span>
+          </p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">2</div>
+          <h4 class="step-title"><span class="t-en">Match & Consult</span><span class="t-es">Conexión y Consulta</span></h4>
+          <p class="step-desc">
+            <span class="t-en b">We match you with the appropriate vetted professional who will contact you for a consultation.</span>
+            <span class="t-es b">Te conectamos con el profesional adecuado que se comunicará contigo para una consulta.</span>
+          </p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">3</div>
+          <h4 class="step-title"><span class="t-en">Project Execution</span><span class="t-es">Ejecución del Proyecto</span></h4>
+          <p class="step-desc">
+            <span class="t-en b">Review your estimate, approve the work, and experience professional service delivery.</span>
+            <span class="t-es b">Revisa tu presupuesto, aprueba el trabajo y recibe un servicio profesional.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-light" id="contact">
+    <div class="container contact-layout">
+      <div class="contact-info">
+        <h2 class="sec-title"><span class="t-en">Request a Consultation</span><span class="t-es">Solicita una Consulta</span></h2>
+        <p class="sec-desc">
+          <span class="t-en b">Whether you need immediate service or want to join our network as a licensed contractor, our team is ready to assist you.</span>
+          <span class="t-es b">Ya sea que necesites servicio inmediato o quieras unirte como contratista, nuestro equipo está listo para ayudarte.</span>
+        </p>
+
+        <div class="contact-list">
+          <div class="c-item">
+            <div class="c-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            </div>
+            <div class="c-text">
+              <h4>Phone</h4>
+              <p>(713) 000-0000</p>
+            </div>
+          </div>
+          <div class="c-item">
+            <div class="c-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </div>
+            <div class="c-text">
+              <h4>Email</h4>
+              <p>helpdesk@solutions404.com</p>
+            </div>
+          </div>
+          <div class="c-item">
+            <div class="c-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
+            <div class="c-text">
+              <h4>Headquarters</h4>
+              <p>Greater Houston, TX Area</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-wrapper">
+        <form id="contactForm" class="form-card">
+          <div class="form-row">
+            <div class="form-group">
               <label><span class="t-en">First Name</span><span class="t-es">Nombre</span></label>
-              <input type="text" id="ph-fn" name="first_name" required>
+              <input type="text" id="ph-fn" name="first_name" class="form-control" required>
             </div>
-            <div class="fg">
+            <div class="form-group">
               <label><span class="t-en">Last Name</span><span class="t-es">Apellido</span></label>
-              <input type="text" id="ph-ln" name="last_name" required>
+              <input type="text" id="ph-ln" name="last_name" class="form-control" required>
             </div>
           </div>
-          <div class="fg">
-            <label>Email</label>
-            <input type="email" name="email" placeholder="you@email.com" required>
+          <div class="form-group">
+            <label>Business Email</label>
+            <input type="email" name="email" class="form-control" placeholder="name@company.com" required>
           </div>
-          <div class="fg">
-            <label><span class="t-en">Phone (optional)</span><span class="t-es">Teléfono (opcional)</span></label>
-            <input type="tel" name="phone" placeholder="(713) 000-0000">
+          <div class="form-group">
+            <label><span class="t-en">Phone Number</span><span class="t-es">Teléfono</span></label>
+            <input type="tel" name="phone" class="form-control" placeholder="(713) 000-0000">
           </div>
-          <div class="fg">
-            <label><span class="t-en">Service Needed</span><span class="t-es">Servicio Requerido</span></label>
-            <select id="svc-sel" name="service" required></select>
+          <div class="form-group">
+            <label><span class="t-en">Service Required</span><span class="t-es">Servicio Requerido</span></label>
+            <select id="svc-sel" name="service" class="form-control" required></select>
           </div>
-          <div class="fg">
-            <label><span class="t-en">Tell us about your project</span><span class="t-es">Cuéntanos sobre tu proyecto</span></label>
-            <textarea id="ph-msg" name="message" required></textarea>
+          <div class="form-group">
+            <label><span class="t-en">Project Details</span><span class="t-es">Detalles del Proyecto</span></label>
+            <textarea id="ph-msg" name="message" class="form-control" required></textarea>
           </div>
-          <button type="submit" id="submitBtn" class="submit-btn">
+          <button type="submit" id="submitBtn" class="btn btn-primary btn-submit">
             <span class="btn-text">
-              <span class="t-en">Send Request →</span>
-              <span class="t-es">Enviar Solicitud →</span>
+              <span class="t-en">Submit Request</span>
+              <span class="t-es">Enviar Solicitud</span>
             </span>
           </button>
         </form>
@@ -640,120 +504,75 @@ footer{background:#060e1c;padding:60px 6% 32px;border-top:1px solid rgba(255,255
 </main>
 
 <footer>
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <div style="display:flex;align-items:center;gap:10px">
-        <svg width="34" height="34" aria-hidden="true" viewBox="0 0 40 40" fill="none">
-          <circle cx="20" cy="20" r="19" stroke="#e8561f" stroke-width="1.5" opacity="0.5"/>
-          <circle cx="20" cy="20" r="13" fill="#0f1f3d"/>
-          <path d="M20 9L28 16V31H12V16Z" fill="none" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
-          <path d="M12 17.5L20 11L28 17.5" fill="none" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
-          <rect x="16.5" y="22" width="7" height="9" rx="1.5" fill="#e8561f"/>
-        </svg>
-        <span class="logo-text">Solutions<em>404</em></span>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+          Solutions<span>404</span>
+        </div>
+        <p style="max-width: 300px; margin-bottom: 24px;">
+          <span class="t-en b">Connecting Houston homeowners and businesses with trusted, vetted industry professionals.</span>
+          <span class="t-es b">Conectando a propietarios y empresas de Houston con profesionales de confianza.</span>
+        </p>
       </div>
-      <p class="t-en b">Your trusted directory for home improvement and business services in Greater Houston, TX.</p>
-      <p class="t-es b">Tu directorio de confianza para mejoras del hogar y servicios empresariales en Houston, TX.</p>
+      <div class="footer-col">
+        <h5><span class="t-en">Solutions</span><span class="t-es">Soluciones</span></h5>
+        <ul class="footer-links">
+          <li><a href="#">Roofing / Techado</a></li>
+          <li><a href="#">A/C & HVAC</a></li>
+          <li><a href="#">Water Purification</a></li>
+          <li><a href="#">Digital Marketing</a></li>
+          <li><a href="#">Software Automation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5><span class="t-en">Company</span><span class="t-es">Empresa</span></h5>
+        <ul class="footer-links">
+          <li><a href="#"><span class="t-en">About Us</span><span class="t-es">Nosotros</span></a></li>
+          <li><a href="#"><span class="t-en">Contractor Network</span><span class="t-es">Red de Contratistas</span></a></li>
+          <li><a href="#contact"><span class="t-en">Contact Support</span><span class="t-es">Soporte</span></a></li>
+          <li><a href="#"><span class="t-en">Privacy Policy</span><span class="t-es">Privacidad</span></a></li>
+        </ul>
+      </div>
     </div>
-    <div class="footer-col">
-      <h5><span class="t-en">Services</span><span class="t-es">Servicios</span></h5>
-      <a href="#">Roofing / Techado</a>
-      <a href="#">A/C &amp; HVAC</a>
-      <a href="#">Water Purification</a>
-      <a href="#">Marketing</a>
-      <a href="#">Software &amp; Automation</a>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Solutions 404. All rights reserved.</p>
+      <p>Greater Houston Area, TX</p>
     </div>
-    <div class="footer-col">
-      <h5><span class="t-en">Company</span><span class="t-es">Empresa</span></h5>
-      <a href="#"><span class="t-en">About Us</span><span class="t-es">Nosotros</span></a>
-      <a href="#"><span class="t-en">Join as a Pro</span><span class="t-es">Únete como Pro</span></a>
-      <a href="#" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact</a>
-      <a href="#"><span class="t-en">Privacy Policy</span><span class="t-es">Privacidad</span></a>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>© 2025 Solutions404.com · Greater Houston, TX</p>
-    <div class="footer-badge"><span class="t-en">Made with ♥ for <strong>Houston</strong> families &amp; businesses</span><span class="t-es">Hecho con ♥ para familias y negocios de <strong>Houston</strong></span></div>
   </div>
 </footer>
 
 <script>
 /* ── TRANSLATIONS ── */
 const TR = {
-  en:{
-    ticker:['Roofing','A/C & HVAC','Water Purification','Software Automation','Marketing Solutions','Home Improvement','Licensed Pros','Houston TX'],
-    svcs:['Select a service…','Roofing','A/C & HVAC','Water Filtration & Purification','Marketing Solutions','Software & Automation','Join as a Contractor','Other'],
-    fn:'John',ln:'Smith',msg:'Describe your project briefly…'
+  en: {
+    svcs: ['Select a service...','Roofing','A/C & HVAC','Water Filtration & Purification','Marketing Solutions','Software & Automation','Join Contractor Network','Other'],
+    fn: 'John', ln: 'Doe', msg: 'Please describe the scope of your project...'
   },
-  es:{
-    ticker:['Techado','Aire Acondicionado','Purificación de Agua','Automatización','Mercadotecnia','Mejoras del Hogar','Profesionales Licenciados','Houston TX'],
-    svcs:['Selecciona un servicio…','Techado','Aire Acondicionado / A/C','Filtración y Purificación de Agua','Soluciones de Marketing','Software y Automatización','Unirme como Contratista','Otro'],
-    fn:'Juan',ln:'García',msg:'Describe brevemente tu proyecto…'
+  es: {
+    svcs: ['Selecciona un servicio...','Techado','Aire Acondicionado / A/C','Filtración de Agua','Soluciones de Marketing','Software y Automatización','Unirme como Contratista','Otro'],
+    fn: 'Juan', ln: 'Pérez', msg: 'Por favor describe el alcance de tu proyecto...'
   }
 };
 
-function buildTicker(l){
-  const items=[...TR[l].ticker,...TR[l].ticker,...TR[l].ticker];
-  document.getElementById('ticker-track').innerHTML=
-    items.map(t=>`<span class="ticker-item">${t}</span>`).join('');
-}
-function buildSvcs(l){
-  document.getElementById('svc-sel').innerHTML=
-    TR[l].svcs.map((s,i)=>`<option value="${s}">${s}</option>`).join('');
-}
-function updatePH(l){
-  document.getElementById('ph-fn').placeholder=TR[l].fn;
-  document.getElementById('ph-ln').placeholder=TR[l].ln;
-  document.getElementById('ph-msg').placeholder=TR[l].msg;
-}
-function setLang(l){
-  document.body.className='lang-'+l;
-  document.getElementById('btn-en').classList.toggle('on',l==='en');
-  document.getElementById('btn-es').classList.toggle('on',l==='es');
-  buildTicker(l);buildSvcs(l);updatePH(l);
+function buildSvcs(l) {
+  document.getElementById('svc-sel').innerHTML = TR[l].svcs.map(s => `<option value="${s}">${s}</option>`).join('');
 }
 
-/* ── CAROUSEL ── */
-const track=document.getElementById('car-track');
-const dotsWrap=document.getElementById('car-dots');
-let cur=0;
-
-function getVisible(){
-  const w=track.parentElement.offsetWidth;
-  if(w<600)return 1;
-  if(w<900)return 2;
-  return 3;
+function updatePH(l) {
+  document.getElementById('ph-fn').placeholder = TR[l].fn;
+  document.getElementById('ph-ln').placeholder = TR[l].ln;
+  document.getElementById('ph-msg').placeholder = TR[l].msg;
 }
 
-const cards=track.querySelectorAll('.c-card');
-const total=cards.length;
-
-function buildDots(){
-  const vis=getVisible();
-  const pages=total-vis+1;
-  dotsWrap.innerHTML='';
-  for(let i=0;i<pages;i++){
-    const d=document.createElement('span');
-    d.className='dot'+(i===cur?' on':'');
-    d.onclick=()=>goTo(i);
-    dotsWrap.appendChild(d);
-  }
+function setLang(l) {
+  document.body.className = 'lang-' + l;
+  document.getElementById('btn-en').classList.toggle('active', l === 'en');
+  document.getElementById('btn-es').classList.toggle('active', l === 'es');
+  buildSvcs(l);
+  updatePH(l);
 }
-
-function goTo(i){
-  const vis=getVisible();
-  const max=total-vis;
-  cur=Math.max(0,Math.min(i,max));
-  const cardW=cards[0].offsetWidth+24;
-  track.style.transform=`translateX(-${cur*cardW}px)`;
-  buildDots();
-  document.getElementById('car-prev').disabled=cur===0;
-  document.getElementById('car-next').disabled=cur>=max;
-}
-
-function carMove(dir){goTo(cur+dir)}
-
-window.addEventListener('resize',()=>goTo(Math.min(cur,total-getVisible())));
 
 /* ── FORM SUBMISSION LOGIC (GOOGLE WORKSPACE) ── */
 const form = document.getElementById('contactForm');
@@ -769,7 +588,7 @@ form.addEventListener('submit', function(e) {
   const currentLang = document.body.classList.contains('lang-en') ? 'en' : 'es';
   submitBtn.disabled = true;
   submitBtn.style.opacity = '0.7';
-  btnText.innerHTML = currentLang === 'en' ? 'Sending...' : 'Enviando...';
+  btnText.innerHTML = currentLang === 'en' ? 'Processing...' : 'Procesando...';
 
   const formData = new FormData(form);
 
@@ -780,16 +599,17 @@ form.addEventListener('submit', function(e) {
   .then(response => response.json())
   .then(data => {
     if(data.result === "success") {
-      submitBtn.style.background = "var(--teal)";
-      submitBtn.style.boxShadow = "none";
-      btnText.innerHTML = currentLang === 'en' ? '✅ Message Sent!' : '✅ ¡Mensaje Enviado!';
+      submitBtn.style.background = "#16a34a"; // Professional green
+      submitBtn.style.borderColor = "#16a34a";
+      btnText.innerHTML = currentLang === 'en' ? '✓ Request Submitted' : '✓ Solicitud Enviada';
       form.reset(); 
       
       setTimeout(() => {
         submitBtn.disabled = false;
         submitBtn.style.background = ""; 
+        submitBtn.style.borderColor = "";
         submitBtn.style.opacity = '1';
-        btnText.innerHTML = currentLang === 'en' ? '<span class="t-en b">Send Request →</span>' : '<span class="t-es b">Enviar Solicitud →</span>';
+        btnText.innerHTML = currentLang === 'en' ? '<span class="t-en b">Submit Request</span>' : '<span class="t-es b">Enviar Solicitud</span>';
       }, 4000);
     } else {
       throw new Error("Script returned error");
@@ -798,14 +618,13 @@ form.addEventListener('submit', function(e) {
   .catch(error => {
     submitBtn.disabled = false;
     submitBtn.style.opacity = '1';
-    btnText.innerHTML = currentLang === 'en' ? 'Error. Try Again.' : 'Error. Intenta de nuevo.';
+    btnText.innerHTML = currentLang === 'en' ? 'Error. Please Try Again.' : 'Error. Intenta de nuevo.';
   });
 });
 
 /* ── INIT ── */
 document.addEventListener('DOMContentLoaded', () => {
     setLang('en');
-    setTimeout(()=>{buildDots();goTo(0)},100);
 });
 </script>
 </body>
