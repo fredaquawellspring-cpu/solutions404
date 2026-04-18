@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Solutions 404 | Professional Home & Business Services in Houston, TX</title>
-<meta name="description" content="Find vetted, licensed professionals for roofing, A/C, water purification, marketing, and software automation in Greater Houston, TX. Get a free quote today.">
-<meta name="keywords" content="Houston contractors, roofing Houston, AC repair Houston, water purification TX, trusted local businesses, home improvement directory">
+<meta name="description" content="Find vetted, licensed professionals for roofing, A/C, water purification, fencing, marketing, and software automation in Greater Houston, TX. Get a free quote today.">
+<meta name="keywords" content="Houston contractors, roofing Houston, AC repair Houston, water purification TX, fence installation Houston, trusted local businesses, home improvement directory">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://solutions404.com/">
 
@@ -21,9 +20,9 @@
   "@type": "LocalBusiness",
   "name": "Solutions 404",
   "url": "https://solutions404.com/",
-  "telephone": "+17130000000",
+  "telephone": "+18323030568",
   "email": "helpdesk@solutions404.com",
-  "description": "Trusted directory for roofing, A/C, water purification, marketing and software automation services in Greater Houston, TX.",
+  "description": "Trusted directory for roofing, A/C, water purification, fencing, marketing and software automation services in Greater Houston, TX.",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Greater Houston Area",
@@ -43,9 +42,9 @@
   --nav-bg: #ffffff;
   --bg-main: #ffffff;
   --bg-light: #f8fafc;
-  --primary-dark: #0f172a; /* Sophisticated Slate Navy */
+  --primary-dark: #0f172a; 
   --primary: #1e293b;
-  --accent: #ea580c; /* Sharp Corporate Orange */
+  --accent: #ea580c; 
   --accent-hover: #c2410c;
   --text-dark: #0f172a;
   --text-main: #334155;
@@ -109,23 +108,62 @@ header {
 }
 .lang-btn.active { background: white; color: var(--primary-dark); box-shadow: var(--shadow-sm); }
 
-/* ── HERO SECTION ── */
-.hero {
-  background-color: var(--primary-dark); color: white;
-  padding: 160px 0 100px; position: relative; overflow: hidden;
+/* ── HERO CAROUSEL ── */
+.hero-slider {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  min-height: 600px;
+  background-color: var(--primary-dark);
+  overflow: hidden;
+  margin-top: 72px; /* Offset for fixed header */
 }
-.hero::before {
-  content: ""; position: absolute; top: 0; right: 0; width: 50%; height: 100%;
-  background: linear-gradient(135deg, rgba(255,255,255,0.03) 0%, transparent 100%); pointer-events: none;
+.slide {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  display: flex;
+  align-items: center;
+  z-index: 1;
 }
-.hero-content { max-width: 700px; position: relative; z-index: 2; }
-.hero-tag {
+.slide.active { opacity: 1; z-index: 2; }
+
+/* Dynamic Backgrounds for Slides */
+.slide-bg {
+  position: absolute; inset: 0;
+  background-size: cover; background-position: center;
+  z-index: -1;
+}
+.slide-bg::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(90deg, rgba(15,23,42,0.95) 0%, rgba(15,23,42,0.8) 50%, rgba(15,23,42,0.4) 100%);
+}
+/* You can replace these with actual image URLs later */
+.bg-1 { background-image: radial-gradient(circle at center, #1e293b, #0f172a); }
+.bg-2 { background-image: radial-gradient(circle at top right, #1e293b, #0f172a); }
+.bg-3 { background-image: radial-gradient(circle at bottom left, #1e293b, #0f172a); }
+
+.slide-content { max-width: 700px; color: white; transform: translateY(20px); transition: transform 0.8s ease; }
+.slide.active .slide-content { transform: translateY(0); }
+
+.slide-tag {
   display: inline-block; color: var(--accent); font-size: 13px; font-weight: 700;
   letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 16px;
 }
-.hero h1 { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 700; line-height: 1.1; letter-spacing: -1px; margin-bottom: 24px; color: white; }
-.hero p { font-size: 18px; color: #94a3b8; margin-bottom: 40px; font-weight: 400; max-width: 540px; }
-.hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+.slide h1 { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 700; line-height: 1.1; letter-spacing: -1px; margin-bottom: 24px; color: white; }
+.slide p { font-size: 18px; color: #cbd5e1; margin-bottom: 40px; font-weight: 400; max-width: 540px; }
+
+.slider-controls {
+  position: absolute; bottom: 40px; left: 5%; z-index: 10;
+  display: flex; gap: 12px;
+}
+.dot {
+  width: 12px; height: 12px; border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.4); background: transparent;
+  cursor: pointer; transition: all 0.3s;
+}
+.dot.active { background: var(--accent); border-color: var(--accent); width: 24px; border-radius: 6px; }
 
 /* ── TRUST BAR ── */
 .trust-bar { background: var(--primary); padding: 24px 0; border-top: 1px solid rgba(255,255,255,0.05); }
@@ -219,7 +257,7 @@ footer { background: var(--primary-dark); color: #94a3b8; padding: 64px 0 32px; 
   .form-row { grid-template-columns: 1fr; }
 }
 @media (max-width: 576px) {
-  .hero { padding: 120px 0 60px; }
+  .hero-slider { min-height: 500px; height: 70vh; }
   .nav-controls .btn { display: none; }
   .trust-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; gap: 32px; }
@@ -250,28 +288,81 @@ footer { background: var(--primary-dark); color: #94a3b8; padding: 64px 0 32px; 
 </header>
 
 <main>
-  <section class="hero">
-    <div class="container hero-content">
-      <span class="hero-tag">
-        <span class="t-en">Houston's Premier Contractor Directory</span>
-        <span class="t-es">Directorio Principal de Contratistas en Houston</span>
-      </span>
-      <h1>
-        <span class="t-en b">Professional Services for Your Home & Business.</span>
-        <span class="t-es b">Servicios Profesionales para tu Hogar y Negocio.</span>
-      </h1>
-      <p>
-        <span class="t-en b">Connect instantly with fully licensed and thoroughly vetted experts in roofing, HVAC, water purification, and business automation.</span>
-        <span class="t-es b">Conecta al instante con expertos licenciados y verificados en techado, A/C, purificación de agua y automatización comercial.</span>
-      </p>
-      <div class="hero-actions">
-        <button class="btn btn-primary" onclick="document.getElementById('services').scrollIntoView()">
-          <span class="t-en">Explore Services</span><span class="t-es">Ver Servicios</span>
-        </button>
-        <button class="btn btn-outline" onclick="document.getElementById('contact').scrollIntoView()">
-          <span class="t-en">Request Free Quote</span><span class="t-es">Solicitar Cotización</span>
-        </button>
+  <section class="hero-slider" id="hero">
+    
+    <div class="slide active">
+      <div class="slide-bg bg-1"></div>
+      <div class="container slide-content">
+        <span class="slide-tag">
+          <span class="t-en">Houston's Premier Directory</span>
+          <span class="t-es">Directorio Principal de Houston</span>
+        </span>
+        <h1>
+          <span class="t-en b">Professional Services for Your Home & Business.</span>
+          <span class="t-es b">Servicios Profesionales para tu Hogar y Negocio.</span>
+        </h1>
+        <p>
+          <span class="t-en b">Connect instantly with fully licensed and thoroughly vetted experts in roofing, HVAC, fencing, and automation.</span>
+          <span class="t-es b">Conecta al instante con expertos licenciados y verificados en techado, aire acondicionado, cercas y automatización.</span>
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" onclick="document.getElementById('services').scrollIntoView()">
+            <span class="t-en">Explore Services</span><span class="t-es">Ver Servicios</span>
+          </button>
+        </div>
       </div>
+    </div>
+
+    <div class="slide">
+      <div class="slide-bg bg-2"></div>
+      <div class="container slide-content">
+        <span class="slide-tag">
+          <span class="t-en">Reliable Climate Control</span>
+          <span class="t-es">Control de Clima Confiable</span>
+        </span>
+        <h1>
+          <span class="t-en b">Beat the Texas Heat. Expert A/C Solutions.</span>
+          <span class="t-es b">Vence el Calor de Texas. Expertos en A/C.</span>
+        </h1>
+        <p>
+          <span class="t-en b">Fast response times for emergency repairs, tune-ups, and full system replacements to keep your property cool.</span>
+          <span class="t-es b">Tiempos de respuesta rápidos para reparaciones de emergencia y reemplazos de sistemas completos.</span>
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView()">
+            <span class="t-en">Request Free Quote</span><span class="t-es">Solicitar Cotización</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="slide-bg bg-3"></div>
+      <div class="container slide-content">
+        <span class="slide-tag">
+          <span class="t-en">Property Enhancement</span>
+          <span class="t-es">Mejoras de Propiedad</span>
+        </span>
+        <h1>
+          <span class="t-en b">Secure & Enhance Your Property Perimeter.</span>
+          <span class="t-es b">Asegura y Mejora tu Perímetro.</span>
+        </h1>
+        <p>
+          <span class="t-en b">Custom fence installations tailored for privacy, durability, and curb appeal. Residential and commercial fencing experts.</span>
+          <span class="t-es b">Instalaciones de cercas personalizadas diseñadas para privacidad y durabilidad. Expertos residenciales y comerciales.</span>
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView()">
+            <span class="t-en">Request Free Quote</span><span class="t-es">Solicitar Cotización</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider-controls">
+      <div class="dot active" onclick="goToSlide(0)"></div>
+      <div class="dot" onclick="goToSlide(1)"></div>
+      <div class="dot" onclick="goToSlide(2)"></div>
     </div>
   </section>
 
@@ -345,6 +436,20 @@ footer { background: var(--primary-dark); color: #94a3b8; padding: 64px 0 32px; 
           <p class="sc-desc">
             <span class="t-en b">Whole-home filtration systems, reverse osmosis, and water softening solutions for safe, clean, and great-tasting water.</span>
             <span class="t-es b">Sistemas de filtración para todo el hogar, ósmosis inversa y soluciones de ablandamiento de agua.</span>
+          </p>
+          <a href="#contact" class="sc-link">
+            <span class="t-en">Get an Estimate</span><span class="t-es">Obtener Estimado</span> →
+          </a>
+        </div>
+        
+        <div class="service-card">
+          <div class="sc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22V2m16 20V2M4 12h16M4 6h16M4 18h16"></path></svg>
+          </div>
+          <h3 class="sc-title"><span class="t-en">Fence Installation</span><span class="t-es">Instalación de Cercas</span></h3>
+          <p class="sc-desc">
+            <span class="t-en b">Custom wood, vinyl, iron, and chain-link fencing solutions designed for privacy, security, and property enhancement.</span>
+            <span class="t-es b">Soluciones personalizadas de cercas de madera, vinilo, hierro y malla para privacidad, seguridad y mejora de la propiedad.</span>
           </p>
           <a href="#contact" class="sc-link">
             <span class="t-en">Get an Estimate</span><span class="t-es">Obtener Estimado</span> →
@@ -439,7 +544,7 @@ footer { background: var(--primary-dark); color: #94a3b8; padding: 64px 0 32px; 
             </div>
             <div class="c-text">
               <h4>Phone</h4>
-              <p>(713) 000-0000</p>
+              <p>(832) 303-0568</p>
             </div>
           </div>
           <div class="c-item">
@@ -481,7 +586,7 @@ footer { background: var(--primary-dark); color: #94a3b8; padding: 64px 0 32px; 
           </div>
           <div class="form-group">
             <label><span class="t-en">Phone Number</span><span class="t-es">Teléfono</span></label>
-            <input type="tel" name="phone" class="form-control" placeholder="(713) 000-0000">
+            <input type="tel" name="phone" class="form-control" placeholder="(832) 303-0568">
           </div>
           <div class="form-group">
             <label><span class="t-en">Service Required</span><span class="t-es">Servicio Requerido</span></label>
@@ -522,6 +627,7 @@ footer { background: var(--primary-dark); color: #94a3b8; padding: 64px 0 32px; 
           <li><a href="#">Roofing / Techado</a></li>
           <li><a href="#">A/C & HVAC</a></li>
           <li><a href="#">Water Purification</a></li>
+          <li><a href="#">Fence Installation / Cercas</a></li>
           <li><a href="#">Digital Marketing</a></li>
           <li><a href="#">Software Automation</a></li>
         </ul>
@@ -547,11 +653,11 @@ footer { background: var(--primary-dark); color: #94a3b8; padding: 64px 0 32px; 
 /* ── TRANSLATIONS ── */
 const TR = {
   en: {
-    svcs: ['Select a service...','Roofing','A/C & HVAC','Water Filtration & Purification','Marketing Solutions','Software & Automation','Join Contractor Network','Other'],
+    svcs: ['Select a service...','Roofing','A/C & HVAC','Water Filtration & Purification','Fence Installation','Marketing Solutions','Software & Automation','Join Contractor Network','Other'],
     fn: 'John', ln: 'Doe', msg: 'Please describe the scope of your project...'
   },
   es: {
-    svcs: ['Selecciona un servicio...','Techado','Aire Acondicionado / A/C','Filtración de Agua','Soluciones de Marketing','Software y Automatización','Unirme como Contratista','Otro'],
+    svcs: ['Selecciona un servicio...','Techado','Aire Acondicionado / A/C','Filtración de Agua','Instalación de Cercas','Soluciones de Marketing','Software y Automatización','Unirme como Contratista','Otro'],
     fn: 'Juan', ln: 'Pérez', msg: 'Por favor describe el alcance de tu proyecto...'
   }
 };
@@ -572,6 +678,32 @@ function setLang(l) {
   document.getElementById('btn-es').classList.toggle('active', l === 'es');
   buildSvcs(l);
   updatePH(l);
+}
+
+/* ── CAROUSEL LOGIC ── */
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
+let slideInterval;
+
+function goToSlide(n) {
+  slides[currentSlide].classList.remove('active');
+  dots[currentSlide].classList.remove('active');
+  
+  currentSlide = (n + slides.length) % slides.length;
+  
+  slides[currentSlide].classList.add('active');
+  dots[currentSlide].classList.add('active');
+  resetInterval();
+}
+
+function nextSlide() {
+  goToSlide(currentSlide + 1);
+}
+
+function resetInterval() {
+  clearInterval(slideInterval);
+  slideInterval = setInterval(nextSlide, 5000); // 5 seconds per slide
 }
 
 /* ── FORM SUBMISSION LOGIC (GOOGLE WORKSPACE) ── */
@@ -625,6 +757,7 @@ form.addEventListener('submit', function(e) {
 /* ── INIT ── */
 document.addEventListener('DOMContentLoaded', () => {
     setLang('en');
+    resetInterval(); // Start the carousel
 });
 </script>
 </body>
